@@ -1,0 +1,282 @@
+dbaasp_id,name,sequence,length,synthesis_type,has_gram_negative_activity,gn_species_count,best_gn_mic,best_gn_mic_unit,best_gn_mic_species,total_activities,has_hemolytic_data,hemo_activity_value,hemo_measure,target_groups,label,source,seq_id
+DBAASPS_3367,"Panurgine 1/7, PNG-1/7",LNWGAKLKHIIK,12,Synthetic,True,2,100.0,µM,Escherichia coli B,6,True,284.562,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_3367
+DBAASPS_1140,Caerin-1.1 [P15G][P19G],GLLSVLGSVAKHVLGHVVGVIAEHL,25,Synthetic,True,1,100.0,µg/ml,Escherichia coli,9,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_1140
+DBAASPS_436,FRW-4,RRRWWWFPSGSPRRRWWWF,19,Synthetic,False,0,,,,1,False,,,Gram+,0,DBAASP_non_GN,DBAASPS_436
+DBAASPS_740,Histatin 5 (4-13),AKRHHGYKRK,10,Synthetic,False,0,,,,2,False,,,Fungus,0,DBAASP_non_GN,DBAASPS_740
+DBAASPS_2111,Apidaecin-1A [8 L],GNNRPVYLPQPRPPHPRI,18,Synthetic,True,10,3.91,µg/ml,Escherichia coli BL21AI,12,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_2111
+DBAASPS_3365,"Panurgine 1/5, PNG-1/5",LNWKAILKHIIK,12,Synthetic,True,2,2.3,µM,Escherichia coli B,6,True,162.6812,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_3365
+DBAASPR_1546,"Dermaseptin-1, DPh-1, DShypo 01, Dermaseptin-H4, DMS4",GLWSTIKNVGKEAAIAAGKAALGAL,25,Ribosomal,True,5,0.8,µM,Escherichia coli ATCC 11775,13,True,14.4774,,Gram+;Gram-;Parasite;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_1546
+DBAASPS_173,,KWKSFIKKLTKAAKKVVTTAKKPLIV,26,Synthetic,True,7,1.0,µg/ml,Pseudomonas aeruginosa H744,7,False,,,Gram-,1,DBAASP_GN_active,DBAASPS_173
+DBAASPS_3078,Tritrpticin [P5G][P9G],VRRFGWWWGFLRR,13,Synthetic,True,3,32.0,µg/ml,Escherichia coli KCTC 1682,7,True,100.0,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_3078
+DBAASPS_270,"Peptide P [A12,20L]",KWKSFLKTFKSLKKTVLHTLLKAISS,26,Synthetic,True,8,4.0,µM,Escherichia coli ATCC 25922,19,True,12.32744,,Gram-;Cancer;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_270
+DBAASPS_3028,"Apidaecin 2(12-16)-(2-18), PR-2",PRPPHPPRPPHPPRPPHPRL,20,Synthetic,True,4,0.5,µM,Escherichia coli,7,True,1111111.0,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_3028
+DBAASPS_1001,"Pleurocidin-like peptide Hb26 (23-46), NRC-19",FLGLLFHGVHHVGKWIHGLIHGHH,24,Synthetic,True,9,8.0,µg/ml,Pseudomonas aeruginosa Z61,13,True,16.0,,Gram+;Gram-;Cancer;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_1001
+DBAASPR_3360,"Panurgine 1, PNG-1",LNWGAILKHIIK,12,Ribosomal,True,2,3.7,µM,Escherichia coli B,6,True,167.408,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_3360
+DBAASPS_364,,GKKYRRFRWKFRKGRFWFWG,20,Synthetic,True,6,4.0,µg/ml,Bordetella bronchiseptica CUN 11844-99,9,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_364
+DBAASPS_1453,V681 [S11K],KWKSFLKTFKKAVKTVLHTALKAISS,26,Synthetic,True,6,4.0,µg/ml,Escherichia coli DC2,12,True,4.0,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_1453
+DBAASPS_442,FBRW-15,IKQLLHFFQRFGGGRWRWRWF,21,Synthetic,False,0,,,,6,False,,,Gram+,0,DBAASP_non_GN,DBAASPS_442
+DBAASPR_2572,Caerin 1.9,GLFGVLGSIAKHVLPHVVPVIAEKL,25,Ribosomal,True,1,100.0,µg/ml,Escherichia coli,13,True,51.9042,,Gram+;Gram-;Virus;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_2572
+DBAASPS_1232,Pleurocidin(2-22)-Misgurin (14-21),GWGSFFKKAAHVGKHVGKAALGAAARRRK,29,Synthetic,True,6,0.5,µg/ml,Salmonella enterica serovar typhimurium MS7953s,7,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_1232
+DBAASPR_2781,Mastoparan PDD-B,INWLKLGKKILGAL,14,Ribosomal,True,3,4.0,µM,Escherichia coli,6,True,70.6068,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_2781
+DBAASPS_1750,,FIKWKFRWWKWRK,13,Synthetic,True,1,2.0,µg/ml,Pseudomonas aeruginosa H1001,1,False,,,Gram-,1,DBAASP_GN_active,DBAASPS_1750
+DBAASPS_724,Temporin-A [I5A][I5A],FLPLAGRVLSGAL,13,Synthetic,False,0,,,,5,False,,,Gram+,0,DBAASP_non_GN,DBAASPS_724
+DBAASPR_3402,"Temporin-1PRa, Temporin-C",ILPILGNLLNGLL,13,Ribosomal,True,1,100.0,µM,Escherichia coli ATCC 25922,3,True,408.525,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_3402
+DBAASPR_2209,Brevinin-1TSa,FLGSIVGALASALPSLISKIRN,22,Ribosomal,True,5,25.0,µM,Escherichia coli ATCC 25922,11,True,26.732640000000004,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_2209
+DBAASPS_2601,"LP21, Lentivirus lytic peptide LLP1 (1-21)",RVIEVVQGACRAIRHIPRRIR,21,Synthetic,False,0,,,,2,True,79.93824000000001,,Gram+;Mammalian Cell,0,DBAASP_non_GN,DBAASPS_2601
+DBAASPR_842,Maximin-H3,ILGPVLGLVGNALGGLIKKI,20,Ribosomal,True,3,20.0,µg/ml,Escherichia coli ATCC 25922,5,True,50.0,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_842
+DBAASPS_3369,"Panurgine 1/9, PNG-1/9",LNWGAILKKIIK,12,Synthetic,True,2,4.3,µM,Escherichia coli B,6,True,279.76599999999996,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_3369
+DBAASPS_1412,"Pleurocidin-like prepropolypeptide (22-47), NRC-3 ",GRRKRKWLRRIGKGVKIIGGAALDHL,26,Synthetic,True,13,1.0,µg/ml,Pseudomonas aeruginosa Z61,17,True,256.0,,Gram+;Gram-;Cancer;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_1412
+DBAASPS_767,LL-37 (15-32)[E2L][Q8K][K11L][D12K][N16K],KLFKRIVKRILKFLRKLV,18,Synthetic,True,4,,,,8,False,,,Gram+;Gram-;Fungus,1,DBAASP_GN_active,DBAASPS_767
+DBAASPS_2793,Mastoparan MP-6,SNWLKLGKKMMSAL,14,Synthetic,True,1,100.0,µM,Escherichia coli,2,True,160.907,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_2793
+DBAASPS_2102,"Apidaecin-1B [1,10 K]",KNNRPVYIPKPRPPHPRL,18,Synthetic,True,7,0.25,µg/ml,Escherichia coli 45849,9,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_2102
+DBAASPR_1518,Odorranain-R1,GFSPNLPGKGLRIS,14,Ribosomal,True,1,,,,4,True,50.0,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_1518
+DBAASPS_2950,A44 A4 F1 / Apidaecin 1b A7 A17,GNNRPVYIAQPRPPHPAL,18,Synthetic,True,1,125.0,µg/ml,Escherichia coli BL21AI,2,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_2950
+DBAASPS_269,,KWKSFLKTFKSLKKTVLHTALKLISS,26,Synthetic,True,6,7.8,µg/ml,Pseudomonas aeruginosa CP204,6,True,15.6,,Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_269
+DBAASPS_1311,NAP1,TPIESHQVEKRKSNT,15,Synthetic,True,1,,,,2,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_1311
+DBAASPS_2321,PTP5,FLKLLKKLAAKFL,13,Synthetic,True,3,3.125,µg/ml,Escherichia coli DH5alpha,5,True,15.11,,Gram-;Cancer;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_2321
+DBAASPS_895,50S ribosomal protein L1 HP(2-20) [L11S]  ,AKKVFKRLEKSFSKIQNDK,19,Synthetic,True,5,12.5,µM,Escherichia coli,16,True,229.98,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_895
+DBAASPR_2298,Maculatin 1.3,GLLGLLGSVVSHVVPAIVGHF,21,Ribosomal,True,2,100.0,µM,Escherichia coli K-12,5,True,51.7625,,Gram+;Gram-;Virus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_2298
+DBAASPS_351,,CAKAKAKAGSGAKAKAKAC,19,Synthetic,True,5,0.005,µM,Pseudomonas aeruginosa ATCC 27853,6,True,1909.8243,,Gram-;Cancer;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_351
+DBAASPS_365,,GCKKFRRFKLKCKQKLWLWCG,21,Synthetic,True,6,16.0,µg/ml,Bordetella bronchiseptica CUN 11844-99,9,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_365
+DBAASPR_3155,"Antimicrobial peptide 2, XT-2, XPF-St1",GVWSTVLGGLKKFAKGGLEAIVNPK,25,Ribosomal,True,2,5.656854249492381,µM,Escherichia coli ATCC 25922,7,True,329.48737,,Gram+;Gram-;Parasite;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_3155
+DBAASPS_2803,Mastoparan PMM-6,INWKKIASIGKEVLKA,16,Synthetic,True,1,75.0,µM,Escherichia coli,2,True,180.12599999999998,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_2803
+DBAASPS_893,50S ribosomal protein L1 HP(2-20) [Q16W],AKKVFKRLEKLFSKIWNDK,19,Synthetic,True,5,0.78,µM,Salmonella typhimurium,16,True,238.39699,,Gram+;Gram-;Fungus,1,DBAASP_GN_active,DBAASPS_893
+DBAASPS_1747,,IVRVAVALRRIR,12,Synthetic,True,1,73.0,µg/ml,Pseudomonas aeruginosa,1,False,,,Gram-,1,DBAASP_GN_active,DBAASPS_1747
+DBAASPR_1506,"Odorranain-P1a, Brevinin-1-OA2",VIPFVASVAAEMMQHVYCAASKKC,24,Ribosomal,True,3,3.5,µg/ml,Escherichia coli,8,True,50.0,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_1506
+DBAASPS_1923,FLAK50 M,FAKLLALALKKAL,13,Synthetic,True,3,50.0,µg/ml,Pseudomonas aeruginosa ATCC 9027,7,False,,,Gram+;Gram-;Fungus,1,DBAASP_GN_active,DBAASPS_1923
+DBAASPS_2580,Cecropin A (1-7) + Melittin (5-9) [V8I],KWKLFKKILKVL,12,Synthetic,False,0,,,,2,True,3.87025,,Parasite;Mammalian Cell,0,DBAASP_non_GN,DBAASPS_2580
+DBAASPS_2501,"Phage D3 ORF31 (68–83), X4",AAGRYQLLSRYWDAYR,16,Synthetic,True,5,150.0,µM,Escherichia coli ATCC 25922,11,False,,,Gram+;Gram-;Parasite,1,DBAASP_GN_active,DBAASPS_2501
+DBAASPS_2105,Apidaecin-1B [10R]-V,GNNRPVYIPRPRPPHPRLV,19,Synthetic,True,7,1.0,µg/ml,Escherichia coli 45849,9,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_2105
+DBAASPS_693,[KIGAKI]3,KIGAKIKIGAKIKIGAKI,18,Synthetic,True,4,8.0,µg/ml,Escherichia coli ATCC 25922,7,True,500.0,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_693
+DBAASPS_178,,KLWKLFKKIGIGAVLKVLTTGLPALKLTLK,30,Synthetic,True,7,2.0,µg/ml,Escherichia coli UB1005,7,False,,,Gram-,1,DBAASP_GN_active,DBAASPS_178
+DBAASPR_1680,Temporin-RN3,FFPLLFGALSSHLPKLF,17,Ribosomal,True,3,3.75,µg/ml,Pseudomonas aeruginosa PAO1,7,True,100.0,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_1680
+DBAASPS_498,dhvar5,LLLFLLKKRKKRKY,14,Synthetic,True,4,4.0,µg/ml,Pseudomonas aeruginosa ATCC 27853,17,True,107.44268000000001,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_498
+DBAASPS_1139,Caerin-1.1 [P19G],GLLSVLGSVAKHVLPHVVGVIAEHL,25,Synthetic,True,1,100.0,µg/ml,Escherichia coli,9,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_1139
+DBAASPR_2212,Temporin-1TSd,FLPLLASLIGGML,13,Ribosomal,True,1,,,,2,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPR_2212
+DBAASPR_2288,XPF-SE2,GLASTIGSLLGKFAKGGAQAFLQPK,25,Ribosomal,True,4,25.0,µM,Acinetobacter baumannii I NM8,7,True,394.2304,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_2288
+DBAASPR_529,"Bombinin-like peptide 1, BLP-1",GIGASILSAGKSALKGLAKGLAEHFAN,27,Ribosomal,True,10,,,,11,True,1111111.0,,Gram-,1,DBAASP_GN_active,DBAASPR_529
+DBAASPS_887,Buforin-2 (5-13)[17-20]3,RAGLQFPVGRLLRRLLRRLLR,21,Synthetic,True,7,1.0,µg/ml,Escherichia coli,45,True,100.0,,Gram+;Gram-;Cancer;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_887
+DBAASPS_266,,KWKSFLKTFKSAKKTVLHTALKLISS,26,Synthetic,True,6,15.6,µg/ml,Pseudomonas aeruginosa CP204,6,True,62.5,,Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_266
+DBAASPS_1487,Cathelin-related peptide SC5/SMAP-29/ Myeloid antibacterial peptide MAP-29 (6-25),LGRKIAHGVKKYGPTVLRII,20,Synthetic,True,6,20.0,µg/ml,Salmonella enterica subsp. arizonae,22,False,,,Gram+;Gram-;Fungus,1,DBAASP_GN_active,DBAASPS_1487
+DBAASPS_2132,"Apidaecin-1B [4K, 10R]-V",GNNKPVYIPRPRPPHPRLV,19,Synthetic,True,4,3.9,µg/ml,Escherichia coli DSM 1103,7,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_2132
+DBAASPS_268,"V681 [V13K, A20L], Peptide P [A20L]",KWKSFLKTFKSAKKTVLHTLLKAISS,26,Synthetic,True,8,4.0,µM,Escherichia coli ATCC 25922,19,True,97.27296,,Gram-;Cancer;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_268
+DBAASPS_2134,Apidaecin-1B [L18(PIRV)],GNNRPVYIPQPRPPHPRPIRV,21,Synthetic,True,1,15.63,µg/ml,Escherichia coli BL21AI,2,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_2134
+DBAASPR_2282,B2RP-ERa,GVIKSVLKGVAKTVALGML,19,Ribosomal,True,6,6.0,µM,Acinetobacter baumannii NM8,16,True,528.2004,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_2282
+DBAASPS_1443,V681 [V13S],KWKSFLKTFKSASKTVLHTALKAISS,26,Synthetic,True,8,2.0,µg/ml,Salmonella typhimurium C610,20,True,369.45,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_1443
+DBAASPS_892,50S ribosomal protein L1 HP(2-20) [D18W]  ,AKKVFKRLEKLFSKIQNWK,19,Synthetic,True,5,0.39,µM,Salmonella typhimurium,16,True,239.70099,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_892
+DBAASPS_3014,"Apidaecin-3, AP-3",PQPRPPHPRL,10,Synthetic,True,4,16.0,µM,Salmonella typhimurium,7,True,1111111.0,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_3014
+DBAASPS_407,Alpha-9,RWRRWWRHFHHFFH,14,Synthetic,False,0,,,,1,False,,,Gram+,0,DBAASP_non_GN,DBAASPS_407
+DBAASPS_1452,V681 [S11G],KWKSFLKTFKGAVKTVLHTALKAISS,26,Synthetic,True,6,2.5,µg/ml,Escherichia coli DC2,12,True,7.8,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_1452
+DBAASPS_996,"Pleurocidin-like peptide AP2 (23-47), NRC-12",GWKKWFNRAKKVGKTVGGLAVDHYL,25,Synthetic,True,9,1.0,µg/ml,Pseudomonas aeruginosa Z61,13,True,256.0,,Gram+;Gram-;Cancer;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_996
+DBAASPR_2294,PFQa,FLGALLGPLMNLLQ,14,Ribosomal,True,1,160.0,µM,Escherichia coli ATCC 25726,2,True,157.38554,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_2294
+DBAASPS_788,"Neuropeptide Y (12-36)[A1N], NPY (12-36)[A1N]",NPAEDLARYYSALRHYINLITRQRY,25,Synthetic,False,0,,,,1,False,,,Fungus,0,DBAASP_non_GN,DBAASPS_788
+DBAASPS_1754,,KLWWMIRRW,9,Synthetic,True,1,8.0,µg/ml,Pseudomonas aeruginosa H1001,1,False,,,Gram-,1,DBAASP_GN_active,DBAASPS_1754
+DBAASPS_616,Dermaseptin S4 (5-28),TLLKKVLKAAAKAALNAVLVGANA,24,Synthetic,True,3,6.25,µg/ml,Escherichia coli MG1655,7,True,38.823673,,Gram+;Gram-;Virus;Cancer;Mammalian Cell;Biofilm,1,DBAASP_GN_active,DBAASPS_616
+DBAASPS_3368,"Panurgine 1/8, PNG-1/8",LNWGAIKKHIIK,12,Synthetic,True,2,100.0,µM,Escherichia coli B,6,True,284.562,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_3368
+DBAASPS_3373,"Panurgine 1/13, PNG-1/13",KNWKAILKHIIK,12,Synthetic,True,2,7.8,µM,Escherichia coli B,6,True,298.988,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_3373
+DBAASPR_3352,Frenatin-4,GFLDKLKKGASDFANALVNSIKGT,24,Ribosomal,True,1,,,,8,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPR_3352
+DBAASPS_323,,KLAKGLAKWAKGLAKLAKGLA,21,Synthetic,True,2,8.0,µg/ml,Escherichia coli,3,True,500.0,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_323
+DBAASPS_896,50S ribosomal protein L1 HP(2-20) [F5S]  ,AKKVSKRLEKLFSKIQNDK,19,Synthetic,True,5,6.25,µM,Escherichia coli,16,True,226.578,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_896
+DBAASPS_1442,V681 [V13G],KWKSFLKTFKSAGKTVLHTALKAISS,26,Synthetic,True,6,2.5,µg/ml,Escherichia coli UB1005,12,True,125.0,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_1442
+DBAASPS_2798,Mastoparan PMM-1,INWKKIASIGKEVLKAI,17,Synthetic,True,1,5.5,µM,Escherichia coli,2,True,191.442,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_2798
+DBAASPS_3362,"Panurgine 1/2, PNG-1/2",KNWGAILKHIIK,12,Synthetic,True,2,17.1,µM,Escherichia coli B,6,True,284.562,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_3362
+DBAASPS_276,,WWHSWWSTW,9,Synthetic,True,2,125.0,µg/ml,Pseudomonas aeruginosa PAK,9,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_276
+DBAASPS_2805,Mastoparan PMM-8,INWKKIASIGKEVL,14,Synthetic,True,1,100.0,µM,Escherichia coli,2,True,160.1,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_2805
+DBAASPS_894,50S ribosomal protein L1 HP(2-20) [Q16W][D18W]  ,AKKVFKRLEKLFSKIWNWK,19,Synthetic,True,16,0.39,µM,Salmonella typhimurium,38,True,245.51,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_894
+DBAASPR_2128,Eumenine mastoparan-ER,FDIMGLIKKVAGAL,14,Ribosomal,True,4,30.0,µM,Escherichia coli ATCC 25922,11,True,295.378,,Gram+;Gram-;Parasite;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_2128
+DBAASPR_3343,Mastoparan-L,INLKALAALAKKIL,14,Ribosomal,True,28,2.0,µM,Escherichia coli BL21,71,True,148.196,,Gram+;Gram-;Cancer;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_3343
+DBAASPS_2325,Scrambled-4l,KLKLLKLLKLLKLLK,15,Synthetic,True,4,2.0,µM,Acinetobacter baumannii ATCC 19606,8,True,181.055,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_2325
+DBAASPR_2782,"Polistes Mastoparan R3/R1, Mastoparan PDD-B",INWLKLGKKILGAI,14,Ribosomal,True,1,67.5,µM,Escherichia coli,14,True,117.678,,Gram+;Gram-;Cancer;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_2782
+DBAASPR_841,Maximin 4,GIGGVLLSAGKAALKGLAKVLAEKYAN,27,Ribosomal,True,4,2.7,µg/ml,Escherichia coli ATCC 25922,14,False,,,Gram+;Gram-;Virus;Cancer;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_841
+DBAASPR_2290,XPF-SE4,GVWTTILGGLKKFAKGGLEALTNPK,25,Ribosomal,True,1,40.0,µM,Escherichia coli,2,True,156.2496,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_2290
+DBAASPS_3366,"Panurgine 1/6, PNG-1/6",LNWGKILKHIIK,12,Synthetic,True,2,4.0,µM,Escherichia coli B,6,True,205.0846,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_3366
+DBAASPR_1640,"Mastoparan-M, Mast cell-degranulating peptide, Mastoparan-like peptide 12c",INLKAIAALAKKLL,14,Ribosomal,True,24,2.71,µg/ml,Acinetobacter baumannii,39,True,10.0,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_1640
+DBAASPS_1435,"Pleurocidin-like peptide GC3.8 (23-45), NRC-17",GWKKWLRKGAKHLGQAAIKGLAS,23,Synthetic,True,9,1.0,µg/ml,Aeromonas salmonicida 97-4,13,True,256.0,,Gram+;Gram-;Cancer;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_1435
+DBAASPS_311,,IKQLLHFFQRFGGGFIKHFIHRF,23,Synthetic,True,1,125.0,µg/ml,Pseudomonas aeruginosa PAK,6,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_311
+DBAASPS_1283,ADAMP7,SQSSVDKLNWYKQRK,15,Synthetic,True,1,,,,2,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_1283
+DBAASPR_988,Dermaseptin-like PBN2 ,GLVTSLIKGAGKLLGGLFGSVTGGQS,26,Ribosomal,True,8,3.1,µM,Salmonella typhimurium,17,True,120.9925,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_988
+DBAASPS_1440,V681 [V13L],KWKSFLKTFKSALKTVLHTALKAISS,26,Synthetic,True,8,4.0,µM,Escherichia coli ATCC 25922,20,True,11.92672,,Gram+;Gram-;Cancer;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_1440
+DBAASPS_2062,DnsLK11(2.0),KLKLKLKLKLK,11,Synthetic,False,0,,,,6,False,,,Mollicute,0,DBAASP_non_GN,DBAASPS_2062
+DBAASPS_342,(HR)5,HRHRHRHRHR,10,Synthetic,True,1,10.0,µg/ml,Escherichia coli IFO 3301,2,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_342
+DBAASPR_1990,Caerin-1.6,GLFSVLGAVAKHVLPHVVPVIAEKL,25,Ribosomal,True,3,50.0,µg/ml,Pseudomonas haemolytica,14,True,25.9521,,Gram+;Gram-;Virus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_1990
+DBAASPS_2721,Parasin I (1-15),KGRGKQGGKVRAKAK,15,Synthetic,True,3,1.0,µg/ml,Escherichia coli ATCC 27325,9,False,,,Gram+;Gram-;Fungus,1,DBAASP_GN_active,DBAASPS_2721
+DBAASPS_2060,LK16(W15)(3.0),KLLKLLKLLKLLKLWK,16,Synthetic,False,0,,,,6,False,,,Mollicute,0,DBAASP_non_GN,DBAASPS_2060
+DBAASPS_2097,Apidaecin-1A [10 R],GNNRPVYIPRPRPPHPRI,18,Synthetic,True,7,0.49,µg/ml,Escherichia coli BL21AI,8,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_2097
+DBAASPS_425,FBalpha-12,FKKFWKWFRRFGGGRWRRLLKKLHHLLH,28,Synthetic,False,0,,,,1,False,,,Gram+,0,DBAASP_non_GN,DBAASPS_425
+DBAASPS_2785,Mastoparan PDD-B-4,INWKKLGKKILGAL,14,Synthetic,True,1,43.0,µM,Escherichia coli,2,True,221.9084,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_2785
+DBAASPS_1023,Esculentin (1-21)	,GIFSKLAGKKIKNLLISGLKG,21,Synthetic,True,15,1.56,µM,Escherichia coli ATCC 25922,30,True,1111111.0,,Gram+;Gram-;Cancer;Fungus;Mammalian Cell;Biofilm,1,DBAASP_GN_active,DBAASPS_1023
+DBAASPR_1335,Citropin-2.1,GLIGSIGKALGGLLVDVLKPKL,22,Ribosomal,True,1,100.0,µg/ml,Escherichia coli,9,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPR_1335
+DBAASPR_1978,Temporin-LTe,FLAGLIGGLAKML,13,Ribosomal,True,3,,,,9,True,52.148,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_1978
+DBAASPS_1148,"Beta-defensin 14 (13-34)[C6,11,21A], mBD-14 (13-34)[C6,11,21A]",IRGGRAAVLNALGKEEQIGRAS,22,Synthetic,True,4,,,,7,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_1148
+DBAASPR_1337,Citropin-2.1.3,GLIGSIGKALGGLLVDVLKPKLQAAS,26,Ribosomal,True,1,100.0,µg/ml,Escherichia coli,9,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPR_1337
+DBAASPR_2042,TA1686 Hepcidin-25 / LEAP,DTHFPICIFCCGCCHRSKCGMCCKT,25,Ribosomal,True,12,,,,25,False,,,Gram+;Gram-;Cancer;Fungus,1,DBAASP_GN_active,DBAASPR_2042
+DBAASPR_1505,"Odorranain-O-RA peptide, Odorranain-k1",AVPLIYNRPGIYVTKRPKGK,20,Ribosomal,True,1,,,,4,True,50.0,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_1505
+DBAASPS_2021,NK23a,KISKKIMRTFLRRISKDILTGKK,23,Synthetic,True,16,1.0,µg/ml,Bordetella bronchiseptica CUN 11844-99,35,True,100.0,,Gram+;Gram-;Cancer;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_2021
+DBAASPR_1590,Pleurain-B1 antimicrobial peptide,FLGGLLASLLGKI,13,Ribosomal,True,1,25.0,µg/ml,Escherichia coli ATCC 25922,4,False,,,Gram+;Gram-;Fungus,1,DBAASP_GN_active,DBAASPR_1590
+DBAASPS_1597,Pleurain-E1 [W4G],AKAGGIPPHVIPQIVPVRIRPLCGNV,26,Synthetic,True,1,50.0,µg/ml,Escherichia coli ATCC 25922,4,False,,,Gram+;Gram-;Fungus,1,DBAASP_GN_active,DBAASPS_1597
+DBAASPS_1429,"Winter flounder Z, NRC-10",FFRLLFHGVHHVGKIKPRA,19,Synthetic,True,9,8.0,µg/ml,Pseudomonas aeruginosa Z61,13,True,256.0,,Gram+;Gram-;Cancer;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_1429
+DBAASPR_564,"Drosocin, Drosocin-1",GKPRPYSPRPTSHPRPIRV,19,Ribosomal,True,14,0.4,µM,Escherichia coli ATCC 35218,24,True,100.08225,,Gram+;Gram-;Virus;Parasite;Cancer;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_564
+DBAASPR_505,Caerin-1.10,GLLSVLGSVAKHVLPHVVPVIAEKL,25,Ribosomal,True,3,100.0,µg/ml,Escherichia coli,17,True,56.69818000000001,,Gram+;Gram-;Virus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_505
+DBAASPR_1665,"Defensin-like protein, Coccinin",KQTENLADTY,10,Ribosomal,False,0,,,,9,True,1111111.0,,Virus;Cancer;Fungus;Mammalian Cell,0,DBAASP_non_GN,DBAASPR_1665
+DBAASPS_566,"Drosocin-4, Drosocin-1 [S7T]",GKPRPYTPRPTSHPRPIRV,19,Synthetic,True,3,2.0,µg/ml,Escherichia coli DSM 10233,6,False,,,Gram+;Gram-;Fungus,1,DBAASP_GN_active,DBAASPS_566
+DBAASPS_810,LAH4-AL6,KKALLHLALALLALHAHALALHLKKA,26,Synthetic,True,2,,,,4,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_810
+DBAASPR_1160,Apidaecin-1B,GNNRPVYIPQPRPPHPRL,18,Ribosomal,True,41,0.024,µM,Escherichia coli JW0013,54,True,632.544,,Gram+;Gram-;Cancer;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_1160
+DBAASPS_2061,DnsLK9(2.0),KLKLKLKLK,9,Synthetic,False,0,,,,6,False,,,Mollicute,0,DBAASP_non_GN,DBAASPS_2061
+DBAASPS_1235,"Ceratotoxin (1-17)[L6F,L10A,P11H,A13G,K15H,I16V]-(25-28)-Misgurin (14-21)",SIGSAFKKAAHVGKHVGKAALGAAARRRK,29,Synthetic,True,6,8.0,µg/ml,Salmonella enterica serovar typhimurium MS7953s,7,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_1235
+DBAASPS_2722,Parasin I (1-14),KGRGKQGGKVRAKA,14,Synthetic,True,3,64.0,µg/ml,Pseudomonas putida ATCC 17426,9,False,,,Gram+;Gram-;Fungus,1,DBAASP_GN_active,DBAASPS_2722
+DBAASPS_897,50S ribosomal protein L1 HP(2-20) [Q16F][D18F]  ,AKKVFKRLEKLFSKIFNFK,19,Synthetic,True,5,0.39,µM,Salmonella typhimurium,16,True,237.702,,Gram+;Gram-;Fungus,1,DBAASP_GN_active,DBAASPS_897
+DBAASPR_2176,Ranatuerin-2PLf,GIMDTVKNAAKDLAGQLDKLKCRITGC,27,Ribosomal,True,1,23.0,µM,Escherichia coli ATCC 25922,3,False,,,Gram+;Gram-;Fungus,1,DBAASP_GN_active,DBAASPR_2176
+DBAASPS_1635,Salivary glands defensin S2,NCIQQCVSKGAQGGYCTNEKCTCY,24,Synthetic,True,3,15.811388300841895,µg/ml,Escherichia coli O157,7,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_1635
+DBAASPS_376,B-39,KLLQTFKQIFR,11,Synthetic,False,0,,,,1,False,,,Gram+,0,DBAASP_non_GN,DBAASPS_376
+DBAASPR_530,"Bombinin-like peptide 2, BLP-2",GIGSAILSAGKSALKGLAKGLAEHFAN,27,Ribosomal,True,11,,,,12,True,1111111.0,,Gram-,1,DBAASP_GN_active,DBAASPR_530
+DBAASPS_1634,Midgut defensin G1,LVRVRRGFGCPFDER,15,Synthetic,True,3,,,,7,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_1634
+DBAASPS_870,"Thanatin 6, Thanatin [C11,18A]",GSKKPVPIIYANRRTGKAQRM,21,Synthetic,True,3,20.8,µM,Salmonella typhimurium,5,True,200.0,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_870
+DBAASPS_997,"Pleurocidin-like peptide YT2 (23-47), NRC-07",RWGKWFKKATHVGKHVGKAALTAYL,25,Synthetic,True,9,2.0,µg/ml,Aeromonas salmonicida 97-4,13,True,256.0,,Gram+;Gram-;Cancer;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_997
+DBAASPR_1018,Ranatuerin-9,FLFPLITSFLSKVL,14,Ribosomal,True,1,100.0,µM,Escherichia coli K-12,5,True,20.0,,Gram+;Gram-;Virus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_1018
+DBAASPS_2552,Defensin MGD1 (7-16) peptide T,NYQSHRHSKS,10,Synthetic,False,0,,,,1,False,,,Gram+,0,DBAASP_non_GN,DBAASPS_2552
+DBAASPS_2804,Mastoparan PMM-7,INWKKIASIGKEVLK,15,Synthetic,True,1,100.0,µM,Escherichia coli,2,True,173.018,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_2804
+DBAASPS_1441,V681 [V13A],KWKSFLKTFKSAAKTVLHTALKAISS,26,Synthetic,True,9,2.5,µg/ml,Escherichia coli UB1005,22,True,47.0336,,Gram+;Gram-;Cancer;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_1441
+DBAASPS_185,,KWKSFIKKLTSVLKKVVTTAKPLISS,26,Synthetic,True,10,2.0,µg/ml,Escherichia coli UB1005,11,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_185
+DBAASPS_165,"CP26, MBI 26",KWKSFIKKLTSAAKKVVTTAKPLISS,26,Synthetic,True,31,1.0,µg/ml,Escherichia coli UB1005,46,True,128.0,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_165
+DBAASPR_3238,"Anticancerous peptide 1, Cr-ACP1",AWKLFDDGV,9,Ribosomal,True,2,30.0,µM,Pseudomonas aeruginosa,6,True,1051.2,,Gram+;Gram-;Cancer;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_3238
+DBAASPS_12,,RKRIHIGPGRAFYTT,15,Synthetic,True,3,2.33,µg/ml,Escherichia coli ML-35p,6,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_12
+DBAASPR_1679,Temporin-RN1,FLPLVLGALSGILPKIL,17,Ribosomal,True,3,4.69,µg/ml,Pseudomonas aeruginosa PAO1,7,True,50.0,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_1679
+DBAASPS_898,50S ribosomal protein L1 HP(2-20) [Q16Y][D18Y]  ,AKKVFKRLEKLFSKIYNYK,19,Synthetic,True,5,0.39,µM,Salmonella typhimurium,16,True,240.90200000000002,,Gram+;Gram-;Fungus,1,DBAASP_GN_active,DBAASPS_898
+DBAASPR_824,"Theta defensin 2, RTD-2 ",GVCRCLCRRGVCRCLCRR,18,Ribosomal,True,1,,,,3,False,,,Gram+;Gram-;Fungus,1,DBAASP_GN_active,DBAASPR_824
+DBAASPS_1147,"Beta-defensin 14 (14-23)[C5,10A], mBD-14 (14-23)[C5,10A]",RGGRAAVLNA,10,Synthetic,True,4,,,,7,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_1147
+DBAASPS_790,"Neuropeptide Y (12-36)[A1T], NPY (12-36)[A1T]",TPAEDLARYYSALRHYINLITRQRY,25,Synthetic,False,0,,,,1,False,,,Fungus,0,DBAASP_non_GN,DBAASPS_790
+DBAASPR_160,Tritrpticin,VRRFPWWWPFLRR,13,Ribosomal,True,11,1.9,µM,Escherichia coli D31,28,True,100.0,,Gram+;Gram-;Cancer;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_160
+DBAASPR_3333,"Grammistin GsF, Grammistin Gs 1",LFGFLIKLIPSLFGALSNIGRNRNQ,25,Ribosomal,True,5,25.0,µg/ml,Vibrio parahaemolyticus Vp+1,9,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPR_3333
+DBAASPS_398,B-61,VKKLAKLVRRF,11,Synthetic,False,0,,,,1,False,,,Gram+,0,DBAASP_non_GN,DBAASPS_398
+DBAASPS_603,Thionin (24-32)[C4S][C8S][D9R],REISAKKSR,9,Synthetic,True,1,,,,4,False,,,Gram+;Gram-;Fungus,1,DBAASP_GN_active,DBAASPS_603
+DBAASPS_776,"Cathelicidin-1 (5-26), CATH-1 (5-26), Fowlicidin-1 (5-26)",VWPLVIRTVIAGYNLYRAIKKK,22,Synthetic,True,2,2.4,µM,Salmonella enterica subsp. enterica serovar Typhimurium ATCC 14028,4,True,28.65786,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_776
+DBAASPS_2551,Defensin MGD1 (1-20) peptide S,GFGSPNNYQSHRHSKSIPGR,20,Synthetic,False,0,,,,1,False,,,Gram+,0,DBAASP_non_GN,DBAASPS_2551
+DBAASPS_2322,PTP6,FLKLLKKLAAKLF,13,Synthetic,True,3,6.25,µg/ml,Escherichia coli DH5alpha,7,True,14.0,,Gram-;Cancer;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_2322
+DBAASPS_1313,CNAP1,TPIESHKVEKRKSNK,15,Synthetic,True,1,,,,2,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_1313
+DBAASPS_2611,"W-OmDefB [C11,19,21Del;R1S,T12K,K20N]",WSGIRGYKGGYKGLFKQTNY,20,Synthetic,True,12,128.0,µg/ml,Escherichia coli NCTC 12923,23,True,1111111.0,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_2611
+DBAASPS_2108,"CGA(41-60), Vasostatin-1(41-60)",TLRGDERILSILRHQNLLKE,20,Synthetic,False,0,,,,9,False,,,Fungus,0,DBAASP_non_GN,DBAASPS_2108
+DBAASPR_1547,"Dermaseptin-H5, Dermaseptin-like peptide 5, DMS5",GLWSTIKNVGKEAAIAAGKAVLGSL,25,Ribosomal,True,1,0.5,µM,Escherichia coli ATCC 11775,4,False,,,Gram+;Gram-;Fungus,1,DBAASP_GN_active,DBAASPR_1547
+DBAASPR_839,Maximin H2 ,ILGPVLSMVGSALGGLIKKI,20,Ribosomal,True,3,4.0,µg/ml,Pseudomonas aeruginosa CMCCB 10104,5,True,50.0,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_839
+DBAASPR_1341,Jellein-1,PFKISIHL,8,Ribosomal,True,9,2.5,µg/ml,Escherichia coli CCT 1371,23,True,100.0,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_1341
+DBAASPS_1138,Caerin-1.1 [P15G],GLLSVLGSVAKHVLGHVVPVIAEHL,25,Synthetic,True,1,100.0,µg/ml,Escherichia coli,9,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_1138
+DBAASPS_3026,"Apidaecin-P, AP-P, Apidaecin (14-41)",RREAEPEAEPGNNRPVYIPQPRPPHPRL,28,Synthetic,True,4,2.0,µM,Salmonella typhimurium,7,True,1111111.0,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_3026
+DBAASPS_2940,A17 C1 / Apidaecin 1a shortened,NNRPVYIPQPRPPHPRI,17,Synthetic,True,1,3.91,µg/ml,Escherichia coli BL21AI,2,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_2940
+DBAASPS_1022,Esculentin (1-18)	,GIFSKLAGKKLKNLLISG,18,Synthetic,True,6,8.0,µM,Pseudomonas aeruginosa,13,True,120.98496000000002,,Gram+;Gram-;Cancer;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_1022
+DBAASPS_2807,Mastoparan PMM-10,IWNKIAKSIGKVLEKAL,17,Synthetic,True,1,15.0,µM,Escherichia coli,2,True,191.442,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_2807
+DBAASPS_319,,KIGAKIKWGAKIKIGAKI,18,Synthetic,True,2,8.0,µg/ml,Escherichia coli,3,True,500.0,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_319
+DBAASPR_2122,Eumenine mastoparan-AF,INLLKIAKGIIKSL,14,Ribosomal,True,5,20.0,µg/ml,Escherichia coli CCT 1371,17,True,50.0,,Gram+;Gram-;Parasite;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_2122
+DBAASPS_524,,RRGWALRLVLAY,12,Synthetic,True,2,,,,4,True,22.10715,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_524
+DBAASPS_392,B-55,KLLQTFNQIFR,11,Synthetic,False,0,,,,1,False,,,Gram+,0,DBAASP_non_GN,DBAASPS_392
+DBAASPR_2143,"Meucin-13, Venom antimicrobial peptide-6",IFGAIAGLLKNIF,13,Ribosomal,True,8,,,,33,True,8.604625,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_2143
+DBAASPR_1906,Ishikawain-7,CGYRHGRLNCGRG,13,Ribosomal,True,1,,,,5,False,,,Gram+;Gram-;Fungus,1,DBAASP_GN_active,DBAASPR_1906
+DBAASPS_3370,"Panurgine 1/10, PNG-1/10",LNWGAILKHKIK,12,Synthetic,True,2,100.0,µM,Escherichia coli B,6,True,284.562,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_3370
+DBAASPR_2276,"CPF-L2, Caerulein precursor fragment-related peptide R3/BM2",GIGSALAKAAKLVAGIV,17,Ribosomal,True,1,50.0,µM,Escherichia coli,2,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPR_2276
+DBAASPS_1146,"Beta-defensin 14 (6-17)[C6A], BD-14 (6-17)[C6A], mBD-14 (6-17)[C6A]",LRKFFARIRGGR,12,Synthetic,True,4,,,,7,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_1146
+DBAASPR_1824,Maculatin-1.1,GLFGVLAKVAAHVVPAIAEHF,21,Ribosomal,True,5,32.0,µM,Escherichia coli IFO 12734,24,True,76.6,,Gram+;Gram-;Virus;Fungus;Mammalian Cell;Mollicute,1,DBAASP_GN_active,DBAASPR_1824
+DBAASPS_2116,Apidaecin-1B [18F],GNNRPVYIPQPRPPHPRF,18,Synthetic,True,3,4.0,µg/ml,Salmonella enterica subsp. enterica serovar Typhimurium ATCC 700408,3,False,,,Gram-,1,DBAASP_GN_active,DBAASPS_2116
+DBAASPS_1599,Pleurain-E1 [C23G],AKAWGIPPHVIPQIVPVRIRPLGGNV,26,Synthetic,True,1,25.0,µg/ml,Escherichia coli ATCC 25922,4,False,,,Gram+;Gram-;Fungus,1,DBAASP_GN_active,DBAASPS_1599
+DBAASPS_170,,KWKKFIKKIGIGAVLKVLTTGLPALKLTKK,30,Synthetic,True,8,2.0,µg/ml,Escherichia coli UB1005,8,False,,,Gram-,1,DBAASP_GN_active,DBAASPS_170
+DBAASPR_1159,Apidaecin-2 ,GNNRPIYIPQPRPPHPRL,18,Ribosomal,True,6,0.1,µg/ml,Pseudomonas syringae pv. tomato NCPPB 1106,14,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPR_1159
+DBAASPR_1905,Ishikawain-6,RLMKCYKPNSRGFQLCE,17,Ribosomal,True,1,,,,5,False,,,Gram+;Gram-;Fungus,1,DBAASP_GN_active,DBAASPR_1905
+DBAASPS_1732,,VQLRIRVRVIRK,12,Synthetic,True,3,3.0,µg/ml,Escherichia coli UB1005,6,False,,,Gram+;Gram-;Fungus,1,DBAASP_GN_active,DBAASPS_1732
+DBAASPR_534,"Bombinin-like peptide 3, BLP-3",GIGAAILSAGKSALKGLAKGLAEHF,25,Ribosomal,True,11,,,,12,True,1111111.0,,Gram-,1,DBAASP_GN_active,DBAASPR_534
+DBAASPS_188,,KKWRKSFFKQVGSFDNSV,18,Synthetic,True,7,64.0,µg/ml,Escherichia coli UB1005,7,False,,,Gram-,1,DBAASP_GN_active,DBAASPS_188
+DBAASPS_792,"Neuropeptide Y (12-36)[A1E], NPY (12-36)[A1E]",EPAEDLARYYSALRHYINLITRQRY,25,Synthetic,False,0,,,,1,False,,,Fungus,0,DBAASP_non_GN,DBAASPS_792
+DBAASPS_735,Histatin 5 (7-18),HHGYKRKFHEKH,12,Synthetic,False,0,,,,2,False,,,Fungus,0,DBAASP_non_GN,DBAASPS_735
+DBAASPR_1519,Odorranain-S1,FLPPSPWKETFRTS,14,Ribosomal,True,1,42.5,µg/ml,Escherichia coli,4,True,50.0,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_1519
+DBAASPS_125,"Magainin-2 [S7T,A8L,K10T,F15W]",GIGKFLHTLKTFGKKWVGEIMNS,23,Synthetic,True,2,13.0,µM,Escherichia coli,3,True,90.83095,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_125
+DBAASPS_3372,"Panurgine 1/12, PNG-1/12",KNWGKILKHIIK,12,Synthetic,True,2,11.3,µM,Escherichia coli B,6,True,296.182,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_3372
+DBAASPS_677,Protegrin 1 / Neutrophil peptide 1 (6-18),CYCRRRFCVCVGR,13,Synthetic,True,2,2.7,µM,Neisseria gonorrhoeae F62,2,False,,,Gram-,1,DBAASP_GN_active,DBAASPS_677
+DBAASPS_3210,,RKRLKWWIY,9,Synthetic,True,13,2.4,µg/ml,Stenotrophomonas maltophilia ATCC 13637,20,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_3210
+DBAASPR_2284,Magainin-SE1,GLKEVLHSTKKFAKGFITGLTGQ,23,Ribosomal,True,1,160.0,µM,Escherichia coli,2,True,394.392,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_2284
+DBAASPS_712,Pac-521,KWIKWIKWI,9,Synthetic,True,1,8.0,µM,Escherichia coli,2,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_712
+DBAASPS_2360,GW-M1,GANAAKKLATFAKKIFTAYW,20,Synthetic,True,10,16.0,µg/ml,Enterobacter cloacae BCRC 10401,20,True,64.0,,Gram+;Gram-;Cancer;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_2360
+DBAASPS_789,"Neuropeptide Y (12-36)[A1K], NPY (12-36)[A1K]",KPAEDLARYYSALRHYINLITRQRY,25,Synthetic,False,0,,,,1,False,,,Fungus,0,DBAASP_non_GN,DBAASPS_789
+DBAASPS_1745,,RRWRRWWRRWRR,12,Synthetic,True,1,2.0,µg/ml,Pseudomonas aeruginosa H1001,1,False,,,Gram-,1,DBAASP_GN_active,DBAASPS_1745
+DBAASPS_113,,KLLAKAALKWLLKALKAA,18,Synthetic,True,2,6.2,µM,Escherichia coli,3,True,3.322803,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_113
+DBAASPS_1451,V681 [S11A],KWKSFLKTFKAAVKTVLHTALKAISS,26,Synthetic,True,6,4.0,µg/ml,Escherichia coli DC2,12,True,15.6,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_1451
+DBAASPS_3364,"Panurgine 1/4, PNG-1/4",LNKGAILKHIIK,12,Synthetic,True,2,100.0,µM,Escherichia coli B,6,True,269.95,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_3364
+DBAASPS_1541,OaBac7.5mini,RRIPRPILLPWRPPRPIPRPQPQPIPRWL,29,Synthetic,True,8,2.0,µg/ml,Escherichia coli DC2,15,False,,,Gram+;Gram-;Fungus,1,DBAASP_GN_active,DBAASPS_1541
+DBAASPS_3215,,RRFKFIRWW,9,Synthetic,True,13,0.6,µg/ml,Stenotrophomonas maltophilia ATCC 13637,20,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_3215
+DBAASPS_2786,Mastoparan PDD-B-5,INSLKLGKKILGAL,14,Synthetic,True,1,100.0,µM,Escherichia coli,2,True,146.99,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_2786
+DBAASPS_3079,Tritrpticin [P5A][P9A],VRRFAWWWAFLRR,13,Synthetic,True,3,32.0,µg/ml,Escherichia coli KCTC 1682,7,True,100.0,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_3079
+DBAASPS_2954,A49 A4 / Apidaecin 1b A9,GNNRPVYIAQPRPPHPRL,18,Synthetic,True,1,125.0,µg/ml,Escherichia coli BL21AI,2,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_2954
+DBAASPS_995,"Pleurocidin-like peptide AP1 (23-47), NRC-11",GWKSVFRKAKKVGKTVGGLALDHYL,25,Synthetic,True,9,4.0,µg/ml,Salmonella enterica serovar typhimurium MS7953s,13,True,256.0,,Gram+;Gram-;Cancer;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_995
+DBAASPS_1734,,KQFRIRVRVIRK,12,Synthetic,True,3,3.0,µg/ml,Escherichia coli UB1005,6,False,,,Gram+;Gram-;Fungus,1,DBAASP_GN_active,DBAASPS_1734
+DBAASPR_1349,Bombinin-H1,IIGPVLGMVGSALGGLLKKI,20,Ribosomal,True,1,,,,2,False,,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_1349
+DBAASPS_435,FRW-3,RRRWWWFASASARRRWWWF,19,Synthetic,False,0,,,,1,False,,,Gram+,0,DBAASP_non_GN,DBAASPS_435
+DBAASPS_265,"V681 [V13K], Peptide P",KWKSFLKTFKSAKKTVLHTALKAISS,26,Synthetic,True,27,1.0,µg/ml,Escherichia coli DH5alpha,59,True,250.0,,Gram+;Gram-;Cancer;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_265
+DBAASPR_843,Maximin 5,SIGAKILGGVKTFFKGALKELASTYLQ,27,Ribosomal,True,4,3.6,µg/ml,Klebsiella pneumoniae,14,False,,,Gram+;Gram-;Virus;Cancer;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_843
+DBAASPR_2309,"Casecidin 17, Beta-casein",YQEPVLGPVRGPFPIIV,17,Ribosomal,True,2,,,,3,False,,,Gram-,1,DBAASP_GN_active,DBAASPR_2309
+DBAASPR_1884,Temporin-CG4,FLPILGNLLNGLL,13,Ribosomal,True,5,,,,13,True,209.3655,,Gram+;Gram-;Fungus;Mammalian Cell;Protista,1,DBAASP_GN_active,DBAASPR_1884
+DBAASPR_1816,Ranatuerin-2B,GLLDTIKGVAKTVAASMLDKLKCKISGC,28,Ribosomal,True,1,2.0,µM,Escherichia coli ATCC 25922,3,False,,,Gram+;Gram-;Fungus,1,DBAASP_GN_active,DBAASPR_1816
+DBAASPS_741,Histatin 5 (4-12),AKRHHGYKR,9,Synthetic,False,0,,,,2,False,,,Fungus,0,DBAASP_non_GN,DBAASPS_741
+DBAASPS_271,"Peptide P [A12,20,23L]",KWKSFLKTFKSLKKTVLHTLLKLISS,26,Synthetic,True,6,500.0,µg/ml,Pseudomonas aeruginosa PAO1,14,True,8.122244,,Gram-;Cancer;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_271
+DBAASPS_267,Peptide P [A12L],KWKSFLKTFKSLKKTVLHTALKAISS,26,Synthetic,True,6,15.6,µg/ml,Pseudomonas aeruginosa PAO1,14,True,31.3,,Gram-;Cancer;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_267
+DBAASPS_1424,HB153,FALKALKKLKKALKKAL,17,Synthetic,True,13,4.0,µg/ml,Escherichia coli UB1005,17,False,,,Gram+;Gram-;Fungus,1,DBAASP_GN_active,DBAASPS_1424
+DBAASPR_2308,"Casecidin 15, Beta-casein",YQEPVLGPVRGPFPI,15,Ribosomal,True,2,,,,3,False,,,Gram-,1,DBAASP_GN_active,DBAASPR_2308
+DBAASPS_600,Thionin (7-32)[D26R],TWARNCYNVCRLPGTISREICAKKCR,26,Synthetic,True,1,,,,4,False,,,Gram+;Gram-;Fungus,1,DBAASP_GN_active,DBAASPS_600
+DBAASPS_562,LFampin 265-284,DLIWKLLSKAQEKFGKNKSR,20,Synthetic,True,12,,,,25,False,,,Gram+;Gram-;Fungus,1,DBAASP_GN_active,DBAASPS_562
+DBAASPR_1479,Dybowskin-4,VWPLGLVICKALKIC,15,Ribosomal,True,5,15.0,µg/ml,Escherichia coli KCTC 2433,10,True,100.0,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_1479
+DBAASPS_1280,ADAMP4,GAAAAGKVVGGKGGK,15,Synthetic,True,1,,,,2,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_1280
+DBAASPS_1305,RP11,QDNYWVTQGLNILSG,15,Synthetic,True,1,,,,2,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_1305
+DBAASPR_3332,"Grammistin E, GsE, Grammistin Pp 2b",FIGGIISFIKKLF,13,Ribosomal,True,5,12.5,µg/ml,Vibrio anguillarum NCIMB 829,9,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPR_3332
+DBAASPS_856,Thanatin (10-21),YCNRRTGKCQRM,12,Synthetic,True,7,,,,22,False,,,Gram+;Gram-;Fungus,1,DBAASP_GN_active,DBAASPS_856
+DBAASPS_3133,Anoplin (3-10),LKRIKTLL,8,Synthetic,True,1,31.0,µg/ml,Escherichia coli ATCC 25922,2,True,1111111.0,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_3133
+DBAASPS_388,B-51,YLFQTWQHLFR,11,Synthetic,False,0,,,,1,False,,,Gram+,0,DBAASP_non_GN,DBAASPS_388
+DBAASPS_605,Thionin (7-19),TWARNSYNVSRLP,13,Synthetic,True,1,,,,4,False,,,Gram+;Gram-;Fungus,1,DBAASP_GN_active,DBAASPS_605
+DBAASPR_1991,Caerin-1.20,GLFGILGSVAKHVLPHVIPVVAEHL,25,Ribosomal,True,2,,,,13,True,65.07925,,Gram+;Gram-;Virus,1,DBAASP_GN_active,DBAASPR_1991
+DBAASPR_2293,"CPF-SE3, Antimicrobial peptide 6, XT-6, CPF-SP3",GFLGSLLKTGLKVGSNLL,18,Ribosomal,True,6,6.0,µM,Acinetobacter baumannii I NM8,16,True,400.0128,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_2293
+DBAASPS_2579,Cecropin A (1-7) + Melittin (5-9),KWKLFKKVLKVL,12,Synthetic,False,0,,,,1,False,,,Parasite,0,DBAASP_non_GN,DBAASPS_2579
+DBAASPS_2784,Mastoparan PDD-B-3,INFLKLGKKILGAL,14,Synthetic,True,1,100.0,µM,Escherichia coli,2,True,214.2,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_2784
+DBAASPR_2090,Apidaecin-1A,GNNRPVYIPQPRPPHPRI,18,Ribosomal,True,15,0.1,µg/ml,Escherichia coli NCTC 9001,28,True,99.941956,,Gram+;Gram-;Virus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_2090
+DBAASPS_352,,CFKFKFKFGSGFKFKFKFC,19,Synthetic,True,5,0.004,µM,Pseudomonas aeruginosa ATCC 27853,6,True,84.6671,,Gram-;Cancer;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_352
+DBAASPR_1639,"Odorranin-HP, Odorranain-W-RA1",GLLRASSVWGRKYYVDLAGCAKA,23,Ribosomal,True,11,16.0,µM,Klebsiella pneumoniae ATCC 13883,15,True,100.0,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_1639
+DBAASPS_604,Thionin (15-28),VCRLPGTISREICA,14,Synthetic,True,1,,,,4,False,,,Gram+;Gram-;Fungus,1,DBAASP_GN_active,DBAASPS_604
+DBAASPS_2499,"Phage D3 ORF31 (53–79), X2",PRLKVYLPRYKVYSTAAGRYQLLSRYW,27,Synthetic,True,6,4.0,µM,Pseudomonas aeruginosa ATCC 9027,12,False,,,Gram+;Gram-;Parasite,1,DBAASP_GN_active,DBAASPS_2499
+DBAASPS_3371,"Panurgine 1/11, PNG-1/11",LNWGAILKHIKK,12,Synthetic,True,2,70.0,µM,Escherichia coli B,6,True,284.562,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_3371
+DBAASPS_891,HP(2-20) 50S ribosomal protein L1,AKKVFKRLEKLFSKIQNDK,19,Synthetic,True,7,1.56,µM,Salmonella typhimurium KCTC 1926,19,True,232.588,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_891
+DBAASPS_263,,KWKSFAKTFKSAKKTVLHTAAKAISS,26,Synthetic,True,6,500.0,µg/ml,Pseudomonas aeruginosa PAO1,6,True,1000.0,,Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_263
+DBAASPS_1736,,KRWRIRVRVIRK,12,Synthetic,True,3,1.6,µg/ml,Escherichia coli UB1005,6,False,,,Gram+;Gram-;Fungus,1,DBAASP_GN_active,DBAASPS_1736
+DBAASPS_264,Peptide P [L6A],KWKSFAKTFKSAKKTVLHTALKAISS,26,Synthetic,True,8,64.0,µM,Escherichia coli ATCC 25922,19,True,1477.81,,Gram-;Cancer;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_264
+DBAASPR_3331,"Grammistin D, Gs D, Grammistin Pp 1",FIGGIISFFKRLF,13,Ribosomal,True,5,12.5,µg/ml,Vibrio anguillarum NCIMB 829,9,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPR_3331
+DBAASPS_1434,"Pleurocidin-like peptide GC3.8 (23-41), NRC-16",GWKKWLRKGAKHLGQAAIK,19,Synthetic,True,21,0.5,µg/ml,Salmonella enterica serovar typhimurium MS7953s,41,True,256.0,,Gram+;Gram-;Cancer;Fungus;Mammalian Cell;Biofilm,1,DBAASP_GN_active,DBAASPS_1434
+DBAASPR_1591,Pleurain-C1 antimicrobial peptide,YPELQQDLIARLL,13,Ribosomal,True,1,50.0,µg/ml,Escherichia coli ATCC 25922,4,False,,,Gram+;Gram-;Fungus,1,DBAASP_GN_active,DBAASPR_1591
+DBAASPS_328,CSPC16,TFFRLFNRSFTQALGK,16,Synthetic,False,0,,,,11,False,,,Gram+,0,DBAASP_non_GN,DBAASPS_328
+DBAASPS_1450,V681 [S11V],KWKSFLKTFKVAVKTVLHTALKAISS,26,Synthetic,True,6,4.0,µg/ml,Escherichia coli DC2,12,True,7.8,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_1450
+DBAASPR_1806,Temporin-1La,VLPLISMALGKLL,13,Ribosomal,False,0,,,,1,False,,,Gram+,0,DBAASP_non_GN,DBAASPR_1806
+DBAASPS_2953,A49 A3 / Apidaecin 1b A17,GNNRPVYIPQPRPPHPAL,18,Synthetic,True,1,125.0,µg/ml,Escherichia coli BL21AI,2,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_2953
+DBAASPS_1792,Melittin [K7E],GIGAVLEVLTTGLPALISWIKRKRQQ,26,Synthetic,False,0,,,,0,True,4.0,,Mammalian Cell,0,DBAASP_non_GN,DBAASPS_1792
+DBAASPR_2254,"Hyposin-5, Hyposin-HA4",FRPALIVRTKGTRL,14,Ribosomal,True,1,30.0,µM,Escherichia coli K-12,3,True,100.022446,,Gram+;Gram-;Virus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_2254
+DBAASPS_2320,"Gaegurin 6 [P3K][A6K][C7K][N11K], GGN6 [P3K][A6K][C7K][N11K]",FLKLLKKLAAKFLPTIICKISYKC,24,Synthetic,True,3,50.0,µg/ml,Escherichia coli DH5alpha,7,True,26.15,,Gram-;Cancer;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_2320
+DBAASPS_1310,CRP11,QDNYWVKQGLNKLSK,15,Synthetic,True,1,,,,2,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_1310
+DBAASPS_1735,,KRFRIRVRVIRK,12,Synthetic,True,4,1.6,µg/ml,Escherichia coli UB1005,7,False,,,Gram+;Gram-;Fungus;Biofilm,1,DBAASP_GN_active,DBAASPS_1735
+DBAASPR_849,"Metchnikowin, Mtk-1",HRHQGPIFDTRPSPFNPNQPRPGPIY,26,Ribosomal,True,2,50.0,µM,Burkholderia thailandensis,9,True,302.643,,Gram+;Gram-;Parasite;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_849
+DBAASPR_1650,Gymnin,KTCENLADDY,10,Ribosomal,False,0,,,,9,False,,,Virus;Cancer;Fungus;Mammalian Cell,0,DBAASP_non_GN,DBAASPR_1650
+DBAASPR_1352,Bombinin-H2,IIGPVLGLVGSALGGLLKKI,20,Ribosomal,True,12,12.5,µM,Acinetobacter baumannii ATCC 19606,22,True,7.67784,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_1352
+DBAASPS_725,Temporin-A [I5L][I5L],FLPLLGRVLSGLL,13,Synthetic,False,0,,,,5,False,,,Gram+,0,DBAASP_non_GN,DBAASPS_725
+DBAASPR_1136,Caerin-1.1,GLLSVLGSVAKHVLPHVVPVIAEHL,25,Ribosomal,True,13,3.1,µM,Acinetobacter baumannii ATCC 19606,42,True,67.8,,Gram+;Gram-;Virus;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_1136
+DBAASPS_1577,Antioxidin-RP1 [M2G][Y6G][Y12G][P9G][C10G],AGRLTGNKGGLGGT,14,Synthetic,True,1,,,,4,False,,,Gram+;Gram-;Fungus,1,DBAASP_GN_active,DBAASPS_1577
+DBAASPS_1449,V681 [S11L],KWKSFLKTFKLAVKTVLHTALKAISS,26,Synthetic,True,6,5.0,µg/ml,Escherichia coli DC2,12,True,4.0,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_1449
+DBAASPR_1779,Caerin 1.11,GLFSVLGSVAKHVVPRVVPVIAEHL,25,Ribosomal,True,5,25.0,µM,Escherichia coli B,8,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPR_1779
+DBAASPS_2120,Apidaecin-1B [10R],GNNRPVYIPRPRPPHPRL,18,Synthetic,True,4,1.95,µg/ml,Escherichia coli BL21AI,7,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_2120
+DBAASPS_854,Thanatin (6-21,VPIIYCNRRTGKCQRM,16,Synthetic,True,7,0.848528137423857,µM,Escherichia coli D22,22,False,,,Gram+;Gram-;Fungus,1,DBAASP_GN_active,DBAASPS_854
+DBAASPS_791,"Neuropeptide Y (12-36)[A1D], NPY (12-36)[A1D]",DPAEDLARYYSALRHYINLITRQRY,25,Synthetic,False,0,,,,1,False,,,Fungus,0,DBAASP_non_GN,DBAASPS_791
+DBAASPR_1563,Mastoparan-like peptide 12b,INWKGIAAMKKLL,13,Ribosomal,True,1,15.0,µg/ml,Escherichia coli ATCC 25922,3,False,,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_1563
+DBAASPS_3363,"Panurgine 1/3, PNG-1/3",LKWGAILKHIIK,12,Synthetic,True,2,3.7,µM,Escherichia coli B,6,True,284.372,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_3363
+DBAASPS_3344,Mastoparan like peptide 4/3,LRALLRALLRAL,12,Synthetic,True,4,25.0,µg/ml,Escherichia coli NIHJ JC-2,9,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_3344
+DBAASPS_2264,"Protamine (19-32), Pr-3",VSRRRRRRGGRRRR,14,Synthetic,False,0,,,,9,True,69.89,,Parasite;Fungus;Mammalian Cell,0,DBAASP_non_GN,DBAASPS_2264
+DBAASPR_950,Phylloseptin 12,FLSLLPSIVSGAVSLAKKL,19,Ribosomal,True,1,,,,4,False,,,Gram+;Gram-;Fungus,1,DBAASP_GN_active,DBAASPR_950
+DBAASPS_602,Thionin (24-32)[C4S][C8S],REISAKKSD,9,Synthetic,True,1,,,,4,False,,,Gram+;Gram-;Fungus,1,DBAASP_GN_active,DBAASPS_602
+DBAASPS_3029,"Apidaecin 3(12-16)-(2-18), PR-3",PRPPHPPRPPHPPRPPHPPRPPHPRL,26,Synthetic,True,4,0.5,µM,Salmonella typhimurium,7,True,1111111.0,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_3029
+DBAASPS_2792,Mastoparan MP-5,INWLKLGKKMMSAI,14,Synthetic,True,1,70.0,µM,Escherichia coli,2,True,163.515,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_2792
+DBAASPS_484,,RRRRRRAAFAAWAAFAA,17,Synthetic,True,4,0.5,µM,Escherichia coli DC2,6,True,400.67800000000005,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_484
+DBAASPS_599,Thionin (7-32),TWARNCYNVCRLPGTISREICAKKCD,26,Synthetic,True,1,,,,4,False,,,Gram+;Gram-;Fungus,1,DBAASP_GN_active,DBAASPS_599
+DBAASPR_2967,Cryptonin,GLLNGLALRLGKRALKKIIKRLCR,24,Ribosomal,True,1,3.12,µg/ml,Escherichia coli K-12 594,8,True,200.0,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_2967
+DBAASPS_2603,"LP14, Lentivirus lytic peptide LLP1(8-21)",GACRAIRHIPRRIR,14,Synthetic,False,0,,,,2,True,107.14112,,Gram+;Mammalian Cell,0,DBAASP_non_GN,DBAASPS_2603
+DBAASPR_3403,Temporin-1PRb,ILPILGNLLNSLL,13,Ribosomal,True,1,100.0,µM,Escherichia coli ATCC 25922,3,True,417.534,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_3403
+DBAASPR_1141,Caerin-1.3,GLLSVLGSVAQHVLPHVVPVIAEHL,25,Ribosomal,True,1,100.0,µg/ml,Escherichia coli,9,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPR_1141
+DBAASPR_1675,Gaegurin-RN5,FLGPIIKIATGILPTAICKFLKKC,24,Ribosomal,True,3,37.5,µg/ml,Escherichia coli ML-35p,7,True,100.0,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_1675
+DBAASPS_742,Histatin 5 (4-15)[H4F][H5F][H12F],AKRFFGYKRKFF,12,Synthetic,True,12,12.5,µg/ml,Escherichia coli BCRC 13B0198,26,True,50.0,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_742
+DBAASPS_379,B-42,VKTLLHIFQRF,11,Synthetic,False,0,,,,1,False,,,Gram+,0,DBAASP_non_GN,DBAASPS_379
+DBAASPR_1523,Odorranain-W1,GLFGKSSVWGRKYYVDLAGCAKA,23,Ribosomal,True,1,12.6,µg/ml,Escherichia coli,4,True,50.0,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_1523

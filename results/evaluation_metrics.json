@@ -1,0 +1,202 @@
+{
+  "reconstruction": [
+    {
+      "strategy": "contiguous",
+      "n": 240,
+      "avg_mask_acc": 0.2366010031635034,
+      "median_mask_acc": 0.2,
+      "seq_recovery_rate": 0,
+      "avg_edit_distance": 14.229166666666666,
+      "avg_n_mask": 5.791666666666667
+    },
+    {
+      "strategy": "motif_preserving",
+      "n": 240,
+      "avg_mask_acc": 0.2001651242276243,
+      "median_mask_acc": 0.16666666666666666,
+      "seq_recovery_rate": 0,
+      "avg_edit_distance": 14.483333333333333,
+      "avg_n_mask": 5.883333333333334
+    },
+    {
+      "strategy": "property_guided",
+      "n": 240,
+      "avg_mask_acc": 0.23337396399896398,
+      "median_mask_acc": 0.2,
+      "seq_recovery_rate": 0,
+      "avg_edit_distance": 14.5125,
+      "avg_n_mask": 5.883333333333334
+    },
+    {
+      "strategy": "random",
+      "n": 240,
+      "avg_mask_acc": 0.24993853368853375,
+      "median_mask_acc": 0.2222222222222222,
+      "seq_recovery_rate": 0,
+      "avg_edit_distance": 14.479166666666666,
+      "avg_n_mask": 5.883333333333334
+    }
+  ],
+  "mask_ratio_performance": [
+    {
+      "mask_ratio": 0.15,
+      "n": 240,
+      "avg_mask_acc": 0.23611111111111116,
+      "median_mask_acc": 0.125,
+      "seq_recovery_rate": 0,
+      "avg_edit_distance": 14.283333333333333,
+      "avg_n_mask": 2.933333333333333
+    },
+    {
+      "mask_ratio": 0.25,
+      "n": 240,
+      "avg_mask_acc": 0.22441468253968258,
+      "median_mask_acc": 0.18333333333333335,
+      "seq_recovery_rate": 0,
+      "avg_edit_distance": 14.429166666666667,
+      "avg_n_mask": 4.575
+    },
+    {
+      "mask_ratio": 0.35,
+      "n": 240,
+      "avg_mask_acc": 0.22639880952380956,
+      "median_mask_acc": 0.2,
+      "seq_recovery_rate": 0,
+      "avg_edit_distance": 14.508333333333333,
+      "avg_n_mask": 6.566666666666666
+    },
+    {
+      "mask_ratio": 0.5,
+      "n": 240,
+      "avg_mask_acc": 0.23315402190402212,
+      "median_mask_acc": 0.19090909090909092,
+      "seq_recovery_rate": 0,
+      "avg_edit_distance": 14.483333333333333,
+      "avg_n_mask": 9.366666666666667
+    }
+  ],
+  "generation_quality": {
+    "total": 983,
+    "valid_rate": 1.0,
+    "unique_rate": 1.0,
+    "novel_rate": 1.0,
+    "avg_nn_similarity": 0.3910486698150635
+  },
+  "condition_guidance": {
+    "net_charge": {
+      "lead_mean": 3.7567459362383695,
+      "gen_mean": 5.079160151167673,
+      "target_mean": 5.85872529069623,
+      "delta_lead_to_gen": 1.3224142149293034,
+      "guidance_ratio": 0.6291280702280629
+    },
+    "GRAVY": {
+      "lead_mean": -0.19708886976028528,
+      "gen_mean": -0.09226360264744851,
+      "target_mean": 0.03838980872096875,
+      "delta_lead_to_gen": 0.10482526711283677,
+      "guidance_ratio": 0.4451582104542076
+    },
+    "hydrophobic_ratio": {
+      "lead_mean": 0.42938923233430104,
+      "gen_mean": 0.4055005337036733,
+      "target_mean": 0.453969403419223,
+      "delta_lead_to_gen": -0.023888698630627758,
+      "guidance_ratio": -0.9718686883054956
+    },
+    "KRH_ratio": {
+      "lead_mean": 0.28100607767952934,
+      "gen_mean": 0.30723113973420163,
+      "target_mean": 0.37712003170898223,
+      "delta_lead_to_gen": 0.026225062054672288,
+      "guidance_ratio": 0.2728538464522639
+    },
+    "hemolysis_risk": {
+      "lead_mean": 0.15401277454095727,
+      "gen_mean": 0.1485207539511122,
+      "target_mean": 0.15000000596046448,
+      "delta_lead_to_gen": -0.005492020589845076,
+      "guidance_ratio": 1.3686362618924368
+    },
+    "toxicity_risk": {
+      "lead_mean": 0.0964447327978971,
+      "gen_mean": 0.0883228894328231,
+      "target_mean": 0.15000000596046448,
+      "delta_lead_to_gen": -0.008121843365074002,
+      "guidance_ratio": -0.15165347659454737
+    },
+    "aromatic_ratio": {
+      "lead_mean": 0.0965076818739085,
+      "gen_mean": 0.0845241099781332,
+      "target_mean": 0.0728790738173625,
+      "delta_lead_to_gen": -0.0119835718957753,
+      "guidance_ratio": 0.5071636834085708
+    },
+    "length": {
+      "lead_mean": 20.15768056968464,
+      "gen_mean": 20.2177009155646,
+      "target_mean": 20.15768056968464,
+      "delta_lead_to_gen": 0.06002034587995908,
+      "guidance_ratio": null
+    }
+  },
+  "property_distribution": {
+    "length": {
+      "train_pos_mean": 16.71560287475586,
+      "train_pos_std": 5.933837890625,
+      "gen_mean": 20.217700958251953,
+      "gen_std": 5.3373870849609375,
+      "mean_abs_diff": 3.5020980834960938
+    },
+    "net_charge": {
+      "train_pos_mean": 3.6807773113250732,
+      "train_pos_std": 2.243399143218994,
+      "gen_mean": 5.079160213470459,
+      "gen_std": 1.9027968645095825,
+      "mean_abs_diff": 1.3983829021453857
+    },
+    "GRAVY": {
+      "train_pos_mean": 0.003467536997050047,
+      "train_pos_std": 0.9540545344352722,
+      "gen_mean": -0.0922636017203331,
+      "gen_std": 0.7552423477172852,
+      "mean_abs_diff": 0.09573113918304443
+    },
+    "hydrophobic_ratio": {
+      "train_pos_mean": 0.46525099873542786,
+      "train_pos_std": 0.13946236670017242,
+      "gen_mean": 0.40550053119659424,
+      "gen_std": 0.1496650129556656,
+      "mean_abs_diff": 0.05975046753883362
+    },
+    "KRH_ratio": {
+      "train_pos_mean": 0.28016558289527893,
+      "train_pos_std": 0.1354948878288269,
+      "gen_mean": 0.3072311580181122,
+      "gen_std": 0.07687243819236755,
+      "mean_abs_diff": 0.027065575122833252
+    },
+    "aromatic_ratio": {
+      "train_pos_mean": 0.10605787485837936,
+      "train_pos_std": 0.10188891738653183,
+      "gen_mean": 0.08452411741018295,
+      "gen_std": 0.05899185314774513,
+      "mean_abs_diff": 0.02153375744819641
+    },
+    "hemolysis_risk": {
+      "train_pos_mean": 0.18491487205028534,
+      "train_pos_std": 0.12922000885009766,
+      "gen_mean": 0.14852075278759003,
+      "gen_std": 0.08316826820373535,
+      "mean_abs_diff": 0.03639411926269531
+    },
+    "toxicity_risk": {
+      "train_pos_mean": 0.0985112115740776,
+      "train_pos_std": 0.07937998324632645,
+      "gen_mean": 0.08832289278507233,
+      "gen_std": 0.04588674008846283,
+      "mean_abs_diff": 0.01018831878900528
+    }
+  },
+  "total_candidates": 983
+}

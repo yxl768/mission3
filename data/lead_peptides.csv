@@ -1,0 +1,11 @@
+dbaasp_id,name,sequence,length,synthesis_type,has_gram_negative_activity,gn_species_count,best_gn_mic,best_gn_mic_unit,best_gn_mic_species,total_activities,has_hemolytic_data,hemo_activity_value,hemo_measure,target_groups,label,source,lead_id
+DBAASPS_3367,"Panurgine 1/7, PNG-1/7",LNWGAKLKHIIK,12,Synthetic,True,2,100.0,µM,Escherichia coli B,6,True,284.562,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_3367
+DBAASPS_1140,Caerin-1.1 [P15G][P19G],GLLSVLGSVAKHVLGHVVGVIAEHL,25,Synthetic,True,1,100.0,µg/ml,Escherichia coli,9,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_1140
+DBAASPS_2111,Apidaecin-1A [8 L],GNNRPVYLPQPRPPHPRI,18,Synthetic,True,10,3.91,µg/ml,Escherichia coli BL21AI,12,False,,,Gram+;Gram-,1,DBAASP_GN_active,DBAASPS_2111
+DBAASPS_3365,"Panurgine 1/5, PNG-1/5",LNWKAILKHIIK,12,Synthetic,True,2,2.3,µM,Escherichia coli B,6,True,162.6812,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_3365
+DBAASPR_1546,"Dermaseptin-1, DPh-1, DShypo 01, Dermaseptin-H4, DMS4",GLWSTIKNVGKEAAIAAGKAALGAL,25,Ribosomal,True,5,0.8,µM,Escherichia coli ATCC 11775,13,True,14.4774,,Gram+;Gram-;Parasite;Mammalian Cell,1,DBAASP_GN_active,DBAASPR_1546
+DBAASPS_173,,KWKSFIKKLTKAAKKVVTTAKKPLIV,26,Synthetic,True,7,1.0,µg/ml,Pseudomonas aeruginosa H744,7,False,,,Gram-,1,DBAASP_GN_active,DBAASPS_173
+DBAASPS_3078,Tritrpticin [P5G][P9G],VRRFGWWWGFLRR,13,Synthetic,True,3,32.0,µg/ml,Escherichia coli KCTC 1682,7,True,100.0,,Gram+;Gram-;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_3078
+DBAASPS_270,"Peptide P [A12,20L]",KWKSFLKTFKSLKKTVLHTLLKAISS,26,Synthetic,True,8,4.0,µM,Escherichia coli ATCC 25922,19,True,12.32744,,Gram-;Cancer;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_270
+DBAASPS_3028,"Apidaecin 2(12-16)-(2-18), PR-2",PRPPHPPRPPHPPRPPHPRL,20,Synthetic,True,4,0.5,µM,Escherichia coli,7,True,1111111.0,,Gram+;Gram-;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_3028
+DBAASPS_1001,"Pleurocidin-like peptide Hb26 (23-46), NRC-19",FLGLLFHGVHHVGKWIHGLIHGHH,24,Synthetic,True,9,8.0,µg/ml,Pseudomonas aeruginosa Z61,13,True,16.0,,Gram+;Gram-;Cancer;Fungus;Mammalian Cell,1,DBAASP_GN_active,DBAASPS_1001
