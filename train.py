@@ -34,7 +34,7 @@ SOS_IDX = AA_TO_IDX["[SOS]"]
 EOS_IDX = AA_TO_IDX["[EOS]"]
 
 
-# ===================== Dataset =====================
+# Dataset
 class AMPMaskedDataset(Dataset):
     """
     动态构造masked dataset
@@ -129,7 +129,7 @@ def collate_fn(batch):
     return out
 
 
-# ===================== 描述符归一化 =====================
+# 描述符归一化
 class DescriptorScaler:
     """对描述符做z-score归一化，确保数值稳定"""
 
@@ -157,7 +157,7 @@ class DescriptorScaler:
         return descriptors * self.std + self.mean
 
 
-# ===================== 训练器 =====================
+# 训练器
 class Trainer:
     def __init__(self, cfg: ModelConfig, scaler: DescriptorScaler = None, device: str = None):
         self.cfg = cfg
@@ -355,7 +355,7 @@ class Trainer:
         print(f"[LOAD] 已加载模型: {path}")
 
 
-# ===================== 主入口训练 =====================
+# 主入口训练
 def build_dataloaders(train_df, val_df, cfg: ModelConfig, scaler: DescriptorScaler = None):
     """构造 dataloader 并 fit scaler"""
     train_ds = AMPMaskedDataset(train_df, mode="train")

@@ -186,7 +186,7 @@ def download_dbaasp_dataset():
     """主下载流程"""
     session = create_session()
 
-    # ====== Step 1: 获取肽列表 ======
+    # Step 1：获取肽列表
     print("[DBAASP] Step 1: 获取肽列表...")
     all_peptides = []
     offset = 0
@@ -230,7 +230,7 @@ def download_dbaasp_dataset():
                 and is_standard_sequence(p["sequence"])]
     print(f"  列表获取完成: {len(all_peptides)} 单体肽, 过滤后(8-30aa, 标准AA): {len(filtered)}")
 
-    # ====== Step 2: 获取详细信息 ======
+    # Step 2：获取详细信息
     print(f"[DBAASP] Step 2: 获取详细信息(最多{MAX_DETAIL_FETCH}条)...")
     records = []
     n_gn_active = 0

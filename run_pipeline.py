@@ -101,7 +101,7 @@ def step_report(report=None):
 def generate_markdown_report(report=None):
     """根据评估结果+管线记录生成完整报告Markdown"""
     import pandas as pd
-    # ====== 各模块结果加载 ======
+    # 各模块结果加载
     data_stats = {}
     train_p = os.path.join(DATA_DIR, "train_with_descriptors.csv")
     if os.path.exists(train_p):
@@ -281,8 +281,9 @@ def generate_markdown_report(report=None):
     elif checkpoint_epoch is not None:
         md.append(f"- 当前 history 仅有 **{history_epochs}** epochs，最佳 checkpoint epoch={checkpoint_epoch}；目标 80 epochs 尚未完成。")
         md.append("- 本报告只能作为中间结果，不能将其表述为完整 80 epoch 训练结果。")
-    md.append("\n![Training Curves](../plots/training_curves.png)")
-    md.append("\n![Mask Strategy Comparison](../plots/mask_strategy_comparison.png)")
+    md.append("\n![训练曲线](../plots/training_curves.png)")
+    md.append("\n![Mask 策略重构对比](../plots/mask_strategy_comparison.png)")
+    md.append("\n![Mask 比例性能曲线](../plots/mask_ratio_performance_curve.png)")
 
     md.append("\n## 7. 推理与生成结果\n")
     # 加载评估指标JSON
@@ -350,9 +351,9 @@ def generate_markdown_report(report=None):
             for name, values in opt.items():
                 md.append(f"| {name} | {values.get('lead_mean', float('nan')):.3f} | {values.get('generated_mean', float('nan')):.3f} | {values.get('delta_generated_minus_lead', float('nan')):.3f} |")
 
-    md.append("\n![Condition Guidance](../plots/condition_guidance.png)")
-    md.append("![Property Distribution](../plots/property_distribution.png)")
-    md.append("![Composite Score Histogram](../plots/composite_score_histogram.png)")
+    md.append("\n![条件引导结果](../plots/condition_guidance.png)")
+    md.append("![性质分布对比](../plots/property_distribution.png)")
+    md.append("![候选综合得分分布](../plots/composite_score_histogram.png)")
 
     md.append("\n### 7.7 Top-10 候选AMP（综合Score排序）\n")
     if cand_top is not None and not cand_top.empty:

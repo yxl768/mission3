@@ -11,7 +11,7 @@ from typing import List, Dict, Any
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from config import AMINO_ACIDS, DESCRIPTOR_NAMES
 
-# ===================== 基础物理化学参数 =====================
+# 基础物理化学参数
 # 氨基酸分子量 (Da，平均)
 AA_MW = {
     "A": 71.08, "R": 156.19, "N": 114.10, "D": 115.09, "C": 103.14,
@@ -85,7 +85,7 @@ AROMATIC_AAS = set("FWY")
 ALIPHATIC_AAS = set("AILV")
 
 
-# ===================== 描述符计算函数 =====================
+# 描述符计算函数
 def calc_length(seq: str) -> int:
     return len(seq)
 
@@ -254,7 +254,7 @@ def calc_repeat_ratio(seq: str) -> float:
     return min(1.0, repeat_count * 3 / L)
 
 
-# ===================== ML模型加载（延迟加载，首次调用时初始化） =====================
+# ML 模型加载（延迟加载，首次调用时初始化）
 import pickle as _pickle
 
 _ML_MODELS = {}
@@ -306,7 +306,7 @@ def _extract_feature_vector(seq: str) -> np.ndarray:
     return vec.reshape(1, -1)
 
 
-# ===================== 风险预测（ML模型 + 规则回退） =====================
+# 风险预测（ML 模型 + 规则回退）
 def predict_hemolysis_risk_rule(seq: str) -> float:
     """纯规则公式溶血风险预测（用于ML模型对比基准）"""
     L = len(seq)
@@ -454,7 +454,7 @@ def calc_synthesis_feasibility(seq: str) -> float:
         0.25 * aggregation_score - cysteine_penalty)))
 
 
-# ===================== 主入口：批量计算 =====================
+# 主入口：批量计算
 def compute_descriptors_for_sequence(seq: str, label: int = None) -> Dict[str, float]:
     """对单条序列计算全部描述符"""
     d = {

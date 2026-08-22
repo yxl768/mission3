@@ -194,7 +194,7 @@ def apply_property_guided_mask(sequence: str, mask_ratio: float, rng: np.random.
     return "".join(seq_list), indices
 
 
-# ===================== 调度器 =====================
+# 调度器
 STRATEGY_FN = {
     "random": apply_random_mask,
     "contiguous": apply_contiguous_mask,
@@ -234,7 +234,7 @@ def sample_mask_ratio(rng: np.random.RandomState = None) -> float:
     return MASK_RATIOS[rng.randint(len(MASK_RATIOS))]
 
 
-# ===================== 用于推理阶段的 lead peptide mask =====================
+# 用于推理阶段的 lead peptide mask
 def mask_lead_peptide_for_optimization(sequence: str,
                                        preserve_regions: List[Tuple[int, int]] = None,
                                        mask_ratio: float = 0.3,

@@ -3,7 +3,7 @@
 """
 import os
 
-# ==================== 路径配置 ====================
+# 路径配置
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, "data")
 RESULTS_DIR = os.path.join(BASE_DIR, "results")
@@ -13,7 +13,7 @@ MODEL_DIR = os.path.join(BASE_DIR, "checkpoints")
 for d in [DATA_DIR, RESULTS_DIR, PLOTS_DIR, MODEL_DIR]:
     os.makedirs(d, exist_ok=True)
 
-# ==================== 数据配置 ====================
+# 数据配置
 # 标准20种氨基酸 + 特殊token
 AMINO_ACIDS = list("ACDEFGHIKLMNPQRSTVWY")
 SPECIAL_TOKENS = ["[PAD]", "[MASK]", "[SOS]", "[EOS]", "[UNK]"]
@@ -31,7 +31,7 @@ MASK_RATIOS = [0.15, 0.25, 0.35]
 # 模拟数据集大小（无真实数据库时使用）
 SYNTHETIC_DATA_SIZE = 3000
 
-# ==================== 描述符配置 ====================
+# 描述符配置
 DESCRIPTOR_NAMES = [
     "length",
     "molecular_weight",
@@ -66,14 +66,14 @@ TARGET_PROPERTY_RANGES = {
     "length": (10, 25),
 }
 
-# ==================== Mask策略配置 ====================
+# Mask 策略配置
 MASK_STRATEGIES = ["random", "contiguous", "motif_preserving", "property_guided"]
 # motif保护的残基类型
 MOTIF_RESIDUES = set("KRFWY")
 # contiguous mask长度范围
 CONTIGUOUS_MASK_LEN_RANGE = (3, 8)
 
-# ==================== 模型配置 ====================
+# 模型配置
 class ModelConfig:
     # embedding
     vocab_size = len(VOCAB)
@@ -104,6 +104,6 @@ class ModelConfig:
     temperature = 0.8
     top_k = 40
 
-# ==================== 评估配置 ====================
+# 评估配置
 EVAL_NEAREST_NEIGHBOR_K = 3
 GENERATE_NUM_CANDIDATES = 20

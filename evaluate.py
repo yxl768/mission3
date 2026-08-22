@@ -30,11 +30,11 @@ from scipy.stats import ks_2samp, wasserstein_distance
 from sklearn.metrics import roc_auc_score
 
 sns.set_style("whitegrid")
-plt.rcParams["font.sans-serif"] = ["DejaVu Sans", "SimHei", "Arial"]
+plt.rcParams["font.sans-serif"] = ["Microsoft YaHei", "SimHei", "Arial Unicode MS", "DejaVu Sans"]
 plt.rcParams["axes.unicode_minus"] = False
 
 
-# ===================== 1. 基础生成质量指标 =====================
+# 1. 基础生成质量指标
 def _get_sequence_series(df: pd.DataFrame) -> pd.Series:
     """兼容 raw generation 与 final export 两种列名"""
     if "generated_sequence" in df.columns:
@@ -178,7 +178,7 @@ def analyze_mic_stratification(train_df: pd.DataFrame) -> Dict[str, object]:
     }
 
 
-# ===================== 2. 重构评估 =====================
+# 2. 重构评估
 def analyze_reconstruction(recon_df: pd.DataFrame) -> pd.DataFrame:
     """
     对重构结果做策略级聚合，返回每策略的表现
@@ -196,7 +196,7 @@ def analyze_reconstruction(recon_df: pd.DataFrame) -> pd.DataFrame:
     return g
 
 
-# ===================== 2.5 不同mask ratio下的性能曲线 =====================
+# 2.5 不同 Mask 比例下的性能曲线
 def analyze_mask_ratio_performance(recon_df: pd.DataFrame) -> pd.DataFrame:
     """
     按mask_ratio分组，计算每个ratio下的mask_acc/seq_recovery/edit_distance
@@ -235,37 +235,41 @@ def plot_mask_ratio_curve(recon_df: pd.DataFrame):
     fig, axes = plt.subplots(1, 3, figsize=(18, 5))
     colors = sns.color_palette("Set2", len(strategies))
 
-    # 子图1: mask_acc vs ratio（按策略）
+    strategy_names = {
+        "random": "随机遮盖", "contiguous": "连续遮盖",
+        "motif_preserving": "保留基序", "property_guided": "性质引导"
+    }
+    # 子图1：按策略比较遮盖位点准确率
     ax = axes[0]
     for i, strat in enumerate(strategies):
         sub = recon_df[recon_df["strategy"] == strat] if "strategy" in recon_df.columns else recon_df
         g = sub.groupby("mask_ratio")["mask_acc"].mean().reset_index()
-        ax.plot(g["mask_ratio"], g["mask_acc"], marker="o", label=strat, color=colors[i])
-    ax.set_xlabel("Mask Ratio"); ax.set_ylabel("Masked Token Accuracy")
-    ax.set_title("Mask Token Acc vs Mask Ratio (by Strategy)")
+        ax.plot(g["mask_ratio"], g["mask_acc"], marker="o", label=strategy_names.get(strat, strat), color=colors[i])
+    ax.set_xlabel("Mask 比例"); ax.set_ylabel("被遮盖位点准确率")
+    ax.set_title("不同 Mask 比例下的遮盖位点准确率")
     ax.legend(fontsize=8)
 
-    # 子图2: seq_recovery vs ratio（按策略）
+    # 子图2：按策略比较完整序列恢复率
     ax = axes[1]
     for i, strat in enumerate(strategies):
         sub = recon_df[recon_df["strategy"] == strat] if "strategy" in recon_df.columns else recon_df
         g = sub.groupby("mask_ratio")["full_recovery"].mean().reset_index()
-        ax.plot(g["mask_ratio"], g["full_recovery"], marker="s", label=strat, color=colors[i])
-    ax.set_xlabel("Mask Ratio"); ax.set_ylabel("Full Sequence Recovery Rate")
-    ax.set_title("Seq Recovery vs Mask Ratio (by Strategy)")
+        ax.plot(g["mask_ratio"], g["full_recovery"], marker="s", label=strategy_names.get(strat, strat), color=colors[i])
+    ax.set_xlabel("Mask 比例"); ax.set_ylabel("完整序列恢复率")
+    ax.set_title("不同 Mask 比例下的完整序列恢复率")
     ax.legend(fontsize=8)
 
     # 子图3: edit_distance vs ratio（全体平均）
     ax = axes[2]
-    ax.plot(summary["mask_ratio"], summary["avg_edit_distance"], marker="^", color="#d62728", label="Avg Edit Distance")
+    ax.plot(summary["mask_ratio"], summary["avg_edit_distance"], marker="^", color="#d62728", label="平均编辑距离")
     ax2 = ax.twinx()
-    ax2.plot(summary["mask_ratio"], summary["avg_mask_acc"], marker="o", color="#1f77b4", label="Mask Acc")
-    ax.set_xlabel("Mask Ratio"); ax.set_ylabel("Edit Distance", color="#d62728")
-    ax2.set_ylabel("Mask Token Accuracy", color="#1f77b4")
-    ax.set_title("Edit Distance & Accuracy vs Mask Ratio (Overall)")
+    ax2.plot(summary["mask_ratio"], summary["avg_mask_acc"], marker="o", color="#1f77b4", label="遮盖位点准确率")
+    ax.set_xlabel("Mask 比例"); ax.set_ylabel("编辑距离", color="#d62728")
+    ax2.set_ylabel("遮盖位点准确率", color="#1f77b4")
+    ax.set_title("总体编辑距离与准确率随 Mask 比例变化")
     ax.legend(loc="upper left", fontsize=8); ax2.legend(loc="upper right", fontsize=8)
 
-    fig.suptitle("Performance vs Mask Ratio (Task Requirement: mask ratio curve)", fontsize=13)
+    fig.suptitle("不同 Mask 比例下的模型性能", fontsize=13)
     fig.tight_layout()
     p = os.path.join(PLOTS_DIR, "mask_ratio_performance_curve.png")
     fig.savefig(p, dpi=150)
@@ -273,7 +277,7 @@ def plot_mask_ratio_curve(recon_df: pd.DataFrame):
     print(f"[PLOT] {p}")
 
 
-# ===================== 3. 条件利用能力评估 =====================
+# 3. 条件利用能力评估
 def analyze_condition_guidance(candidates_df: pd.DataFrame) -> Dict[str, Dict]:
     """
     比较生成序列 vs lead序列 vs target描述符
@@ -325,7 +329,7 @@ def analyze_counterfactual_conditions(candidates_df: pd.DataFrame) -> Dict[str, 
     return result
 
 
-# ===================== 4. 性质分布对比 vs 训练集阳性AMP =====================
+# 4. 性质分布对比：生成候选肽与训练集阳性 AMP
 def analyze_property_distribution(candidates_df: pd.DataFrame,
                                   train_pos_df: pd.DataFrame) -> Dict[str, Dict]:
     """
@@ -367,7 +371,7 @@ def analyze_property_distribution(candidates_df: pd.DataFrame,
     return result
 
 
-# ===================== 5. 综合候选肽评分与筛选 =====================
+# 5. 综合候选肽评分与筛选
 def score_and_rank_candidates(candidates_df: pd.DataFrame) -> pd.DataFrame:
     """
     为每个候选计算综合得分（可解释加权），排序返回
@@ -438,7 +442,7 @@ def score_and_rank_candidates(candidates_df: pd.DataFrame) -> pd.DataFrame:
     return candidates_df
 
 
-# ===================== 6. 可视化图表 =====================
+# 6. 可视化图表
 def plot_training_curves(history: dict = None):
     """训练loss & accuracy曲线"""
     if history is None:
@@ -453,34 +457,34 @@ def plot_training_curves(history: dict = None):
 
     # 总loss
     ax = axes[0, 0]
-    ax.plot(epochs, history["train_total"], label="Train Total", color="#1f77b4")
-    ax.plot(epochs, history["val_total"], label="Val Total", color="#ff7f0e")
-    ax.set_xlabel("Epoch"); ax.set_ylabel("Loss")
-    ax.set_title("Total Loss (Recon + KL)")
+    ax.plot(epochs, history["train_total"], label="训练总损失", color="#1f77b4")
+    ax.plot(epochs, history["val_total"], label="验证总损失", color="#ff7f0e")
+    ax.set_xlabel("训练轮次"); ax.set_ylabel("损失")
+    ax.set_title("总损失（重构损失 + KL 散度）")
     ax.legend()
 
     # recon loss
     ax = axes[0, 1]
-    ax.plot(epochs, history["train_recon"], label="Train Recon", color="#1f77b4")
-    ax.plot(epochs, history["val_recon"], label="Val Recon", color="#ff7f0e")
-    ax.set_xlabel("Epoch"); ax.set_ylabel("Recon Loss")
-    ax.set_title("Reconstruction Loss")
+    ax.plot(epochs, history["train_recon"], label="训练重构损失", color="#1f77b4")
+    ax.plot(epochs, history["val_recon"], label="验证重构损失", color="#ff7f0e")
+    ax.set_xlabel("训练轮次"); ax.set_ylabel("重构损失")
+    ax.set_title("重构损失")
     ax.legend()
 
     # KL loss
     ax = axes[1, 0]
-    ax.plot(epochs, history["train_kl"], label="Train KL", color="#2ca02c")
-    ax.plot(epochs, history["val_kl"], label="Val KL", color="#d62728")
-    ax.set_xlabel("Epoch"); ax.set_ylabel("KL Divergence")
-    ax.set_title("KL Loss (latent regularization)")
+    ax.plot(epochs, history["train_kl"], label="训练 KL 散度", color="#2ca02c")
+    ax.plot(epochs, history["val_kl"], label="验证 KL 散度", color="#d62728")
+    ax.set_xlabel("训练轮次"); ax.set_ylabel("KL 散度")
+    ax.set_title("KL 散度（潜变量正则化）")
     ax.legend()
 
     # val acc
     ax = axes[1, 1]
-    ax.plot(epochs, history["val_mask_acc"], label="Masked Token Acc", color="#9467bd")
-    ax.plot(epochs, history["val_seq_recovery"], label="Full Seq Recovery", color="#8c564b")
-    ax.set_xlabel("Epoch"); ax.set_ylabel("Rate")
-    ax.set_title("Validation Accuracy Metrics")
+    ax.plot(epochs, history["val_mask_acc"], label="遮盖位点准确率", color="#9467bd")
+    ax.plot(epochs, history["val_seq_recovery"], label="完整序列恢复率", color="#8c564b")
+    ax.set_xlabel("训练轮次"); ax.set_ylabel("比例")
+    ax.set_title("验证集准确率指标")
     ax.legend()
 
     fig.tight_layout()
@@ -495,20 +499,24 @@ def plot_mask_strategy_comparison(recon_summary: pd.DataFrame):
     if recon_summary.empty:
         return
     fig, axes = plt.subplots(1, 3, figsize=(16, 5))
-    x = recon_summary["strategy"]
+    strategy_names = {
+        "random": "随机遮盖", "contiguous": "连续遮盖",
+        "motif_preserving": "保留基序", "property_guided": "性质引导"
+    }
+    x = recon_summary["strategy"].map(lambda s: strategy_names.get(s, s))
     axes[0].bar(x, recon_summary["avg_mask_acc"], color=sns.color_palette("Set2", len(x)))
-    axes[0].set_title("Masked Token Accuracy")
-    axes[0].set_ylabel("Accuracy")
+    axes[0].set_title("遮盖位点准确率")
+    axes[0].set_ylabel("准确率")
     for tick in axes[0].get_xticklabels():
         tick.set_rotation(25); tick.set_ha("right")
 
     axes[1].bar(x, recon_summary["seq_recovery_rate"], color=sns.color_palette("Set2", len(x)))
-    axes[1].set_title("Full Sequence Recovery Rate")
+    axes[1].set_title("完整序列恢复率")
     for tick in axes[1].get_xticklabels():
         tick.set_rotation(25); tick.set_ha("right")
 
     axes[2].bar(x, recon_summary["avg_edit_distance"], color=sns.color_palette("Set2", len(x)))
-    axes[2].set_title("Avg Edit Distance")
+    axes[2].set_title("平均编辑距离")
     for tick in axes[2].get_xticklabels():
         tick.set_rotation(25); tick.set_ha("right")
 
@@ -524,6 +532,12 @@ def plot_condition_guidance(cond_analysis: Dict):
     if not cond_analysis:
         return
     metrics = list(cond_analysis.keys())
+    metric_names = {
+        "net_charge": "净电荷", "GRAVY": "GRAVY 疏水性",
+        "hydrophobic_ratio": "疏水残基比例", "KRH_ratio": "KRH 比例",
+        "hemolysis_risk": "溶血风险", "toxicity_risk": "毒性风险",
+        "aromatic_ratio": "芳香族比例", "length": "长度"
+    }
     lead_means = [cond_analysis[m]["lead_mean"] for m in metrics]
     gen_means = [cond_analysis[m]["gen_mean"] for m in metrics]
     target_means = [cond_analysis[m]["target_mean"] if cond_analysis[m]["target_mean"] is not None else np.nan for m in metrics]
@@ -531,15 +545,15 @@ def plot_condition_guidance(cond_analysis: Dict):
     x = np.arange(len(metrics))
     width = 0.28
     fig, ax = plt.subplots(figsize=(12, 6))
-    b1 = ax.bar(x - width, lead_means, width, label="Lead Peptide (orig)", color="#8da0cb")
-    b2 = ax.bar(x,         gen_means,  width, label="Generated Candidate", color="#fc8d62")
+    b1 = ax.bar(x - width, lead_means, width, label="Lead 肽（原始）", color="#8da0cb")
+    b2 = ax.bar(x,         gen_means,  width, label="生成候选肽", color="#fc8d62")
     has_target = not np.all(np.isnan(target_means))
     if has_target:
-        b3 = ax.bar(x + width, target_means, width, label="Target Condition", color="#66c2a5")
+        b3 = ax.bar(x + width, target_means, width, label="目标条件", color="#66c2a5")
 
     ax.set_xticks(x)
-    ax.set_xticklabels(metrics, rotation=30, ha="right")
-    ax.set_title("Condition Guidance: Lead → Generated vs Target Descriptor")
+    ax.set_xticklabels([metric_names.get(m, m) for m in metrics], rotation=30, ha="right")
+    ax.set_title("条件引导：Lead 肽、生成候选肽与目标描述符")
     ax.legend()
     fig.tight_layout()
     p = os.path.join(PLOTS_DIR, "condition_guidance.png")
@@ -557,12 +571,12 @@ def plot_property_distribution(candidates_df: pd.DataFrame, train_pos_df: pd.Dat
     rows = []
     for s in train_pos_df["sequence"].tolist():
         d = compute_descriptors_for_sequence(s, label=1)
-        row = {"group": "Train G- Active AMP"}
+        row = {"group": "训练集革兰氏阴性活性 AMP"}
         for m in metrics:
             row[m] = d[m]
         rows.append(row)
     for _, r in candidates_df.iterrows():
-        row = {"group": "Generated Candidates"}
+        row = {"group": "生成候选肽"}
         for m in metrics:
             col = f"gen_{m}"
             row[m] = r[col] if col in candidates_df.columns else r.get(m, np.nan)
@@ -577,12 +591,17 @@ def plot_property_distribution(candidates_df: pd.DataFrame, train_pos_df: pd.Dat
             sns.violinplot(data=df, x="group", y=m, ax=ax, palette="Set2", inner="quartile")
         except Exception:
             continue
-        ax.set_title(m)
+        metric_names = {
+            "net_charge": "净电荷", "GRAVY": "GRAVY 疏水性",
+            "hydrophobic_ratio": "疏水残基比例", "hemolysis_risk": "溶血风险",
+            "length": "长度"
+        }
+        ax.set_title(metric_names.get(m, m))
     # 去掉最后一个空ax
     if len(axes) > len(metrics):
         for j in range(len(metrics), len(axes)):
             axes[j].axis("off")
-    fig.suptitle("Property Distribution: Generated vs Train G- Active AMP", fontsize=13)
+    fig.suptitle("性质分布：生成候选肽与训练集革兰氏阴性活性 AMP", fontsize=13)
     fig.tight_layout()
     p = os.path.join(PLOTS_DIR, "property_distribution.png")
     fig.savefig(p, dpi=150)
@@ -596,10 +615,10 @@ def plot_composite_score_histogram(candidates_df: pd.DataFrame):
         return
     fig, ax = plt.subplots(figsize=(10, 5))
     ax.hist(candidates_df["composite_score"], bins=30, color="#66c2a5", edgecolor="white")
-    ax.axvline(candidates_df["composite_score"].median(), color="#fc8d62", linestyle="--", label="Median")
-    ax.set_xlabel("Composite Score")
-    ax.set_ylabel("Count")
-    ax.set_title("Distribution of Candidate Composite Scores")
+    ax.axvline(candidates_df["composite_score"].median(), color="#fc8d62", linestyle="--", label="中位数")
+    ax.set_xlabel("综合得分")
+    ax.set_ylabel("数量")
+    ax.set_title("候选肽综合得分分布")
     ax.legend()
     fig.tight_layout()
     p = os.path.join(PLOTS_DIR, "composite_score_histogram.png")
@@ -608,7 +627,7 @@ def plot_composite_score_histogram(candidates_df: pd.DataFrame):
     print(f"[PLOT] {p}")
 
 
-# ===================== 7. 最终结果输出 =====================
+# 7. 最终结果输出
 def build_final_candidates_output(candidates_df: pd.DataFrame,
                                   add_predicted_activity: bool = True) -> pd.DataFrame:
     """
@@ -713,7 +732,7 @@ def build_final_candidates_output(candidates_df: pd.DataFrame,
     return final
 
 
-# ===================== 8. 完整评估管线 =====================
+# 8. 完整评估管线
 def run_full_evaluation(candidates_df: pd.DataFrame = None,
                         recon_df: pd.DataFrame = None,
                         history: dict = None) -> Dict:

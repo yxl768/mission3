@@ -22,7 +22,7 @@ PAD_IDX = AA_TO_IDX["[PAD]"]
 MASK_IDX = AA_TO_IDX["[MASK]"]
 
 
-# ===================== 工具函数 =====================
+# 工具函数
 def sequence_to_indices(seq: str, max_len: int = MAX_SEQ_LEN,
                         add_sos_eos: bool = True) -> np.ndarray:
     """序列转索引，正确把 ``[MASK]`` 等特殊token作为单个token处理。"""
@@ -66,7 +66,7 @@ def indices_to_sequence(indices: list, stop_at_eos: bool = True) -> str:
     return "".join(out)
 
 
-# ===================== Encoder =====================
+# Encoder
 class Encoder(nn.Module):
     """BiGRU Encoder：编码 masked sequence + descriptor 条件"""
 
@@ -142,7 +142,7 @@ class Encoder(nn.Module):
         return mu, logvar, enc_out, attn_weights
 
 
-# ===================== Decoder =====================
+# Decoder
 class Decoder(nn.Module):
     """Autoregressive GRU Decoder，使用 latent + descriptor 作为条件"""
 
@@ -215,7 +215,7 @@ class Decoder(nn.Module):
         return logits, new_hidden
 
 
-# ===================== CVAE 主模型 =====================
+# CVAE 主模型
 class ConditionalVAE(nn.Module):
     """条件VAE：机制描述符 + masked sequence → original sequence"""
 
@@ -258,7 +258,7 @@ class ConditionalVAE(nn.Module):
         infill_logits = self.mask_head(torch.cat([enc_out, cond_b], dim=-1))
         return logits, mu, logvar, z, infill_logits
 
-    # ===================== 损失函数 =====================
+    # 损失函数
     def compute_loss(self, logits: torch.Tensor, tgt_idx: torch.Tensor,
                      mu: torch.Tensor, logvar: torch.Tensor,
                      kl_weight: float = 0.05, mask_only: bool = False,
@@ -327,7 +327,7 @@ class ConditionalVAE(nn.Module):
         cond_b = cond.unsqueeze(1).expand(-1, enc_out.shape[1], -1)
         return self.mask_head(torch.cat([enc_out, cond_b], dim=-1))
 
-    # ===================== 推理生成 =====================
+    # 推理生成
     @torch.no_grad()
     def reconstruct_or_generate(self, src_idx: torch.Tensor, cond: torch.Tensor,
                                 max_len: int = None, temperature: float = 0.8,

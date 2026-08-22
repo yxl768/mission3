@@ -106,9 +106,11 @@ $$\mathcal{L}_{total} = \mathcal{L}_{recon} + \lambda_{infill}\mathcal{L}_{maske
 
 > 说明：当前结果属于模型原型，预测活性、溶血和毒性均为 in-silico 结果，不能替代 MIC/HC50/细胞毒性实验。
 
-![Training Curves](../plots/training_curves.png)
+![训练曲线](../plots/training_curves.png)
 
-![Mask Strategy Comparison](../plots/mask_strategy_comparison.png)
+![Mask 策略重构对比](../plots/mask_strategy_comparison.png)
+
+![Mask 比例性能曲线](../plots/mask_ratio_performance_curve.png)
 
 ## 7. 推理与生成结果
 
@@ -172,9 +174,9 @@ $$\mathcal{L}_{total} = \mathcal{L}_{recon} + \lambda_{infill}\mathcal{L}_{maske
 | toxicity_risk | 0.134 | 0.107 | -0.027 |
 | synthesis_feasibility | 0.895 | 0.915 | 0.020 |
 
-![Condition Guidance](../plots/condition_guidance.png)
-![Property Distribution](../plots/property_distribution.png)
-![Composite Score Histogram](../plots/composite_score_histogram.png)
+![条件引导结果](../plots/condition_guidance.png)
+![性质分布对比](../plots/property_distribution.png)
+![候选综合得分分布](../plots/composite_score_histogram.png)
 
 ### 7.7 Top-10 候选AMP（综合Score排序）
 

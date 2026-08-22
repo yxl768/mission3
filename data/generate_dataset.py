@@ -96,7 +96,7 @@ def generate_synthetic_amp_dataset(n_positive=None, n_negative=None, seed=42):
     records = []
     seq_id = 1
 
-    # ===== 正样本 =====
+    # 正样本
     for _ in range(n_positive):
         seq_len = int(rng.randint(MIN_SEQ_LEN, MAX_SEQ_LEN + 1))
         seq_list = [_biased_amino_choice(rng, gram_active=True) for _ in range(seq_len)]
@@ -118,7 +118,7 @@ def generate_synthetic_amp_dataset(n_positive=None, n_negative=None, seed=42):
         })
         seq_id += 1
 
-    # ===== 负样本 =====
+    # 负样本
     for _ in range(n_negative):
         seq_len = int(rng.randint(MIN_SEQ_LEN, MAX_SEQ_LEN + 1))
         seq_list = [_biased_amino_choice(rng, gram_active=False) for _ in range(seq_len)]

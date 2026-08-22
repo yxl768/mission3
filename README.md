@@ -180,7 +180,7 @@ $$
 
 ## 7. 训练曲线与训练结果
 
-![Training curves](plots/training_curves.png)
+![训练曲线](plots/training_curves.png)
 
 当前评估使用 [`checkpoints/best_cvae.pt`](checkpoints/best_cvae.pt)，其中保存的最佳 checkpoint epoch 为 **73**；[`checkpoints/last_cvae.pt`](checkpoints/last_cvae.pt) 为完整训练的 epoch 80，[`checkpoints/history.json`](checkpoints/history.json) 含本次新 split 的完整 80 epoch 历史，训练、重构和生成结果来自同一轮实验。
 
@@ -199,7 +199,7 @@ $$
 
 测试集评估采用自由 greedy 补全，保留非 mask scaffold，仅统计被遮盖位置。每种策略评估 240 个阳性测试样本。
 
-![Mask strategy comparison](plots/mask_strategy_comparison.png)
+![Mask 策略重构对比](plots/mask_strategy_comparison.png)
 
 ### 8.1 Mask 策略比较
 
@@ -214,7 +214,7 @@ $$
 
 ### 8.2 Mask ratio 曲线
 
-![Performance versus mask ratio](plots/mask_ratio_performance_curve.png)
+![Mask 比例性能曲线](plots/mask_ratio_performance_curve.png)
 
 | Mask ratio | Masked token accuracy | Full sequence recovery | 平均 edit distance |
 |---:|---:|---:|---:|
@@ -246,7 +246,7 @@ mask ratio 增大后 token accuracy 和完整恢复率均下降，符合上下�
 
 目标条件为：提高阳离子性、保持适度疏水、降低溶血和毒性风险。`guidance ratio=(Generated-Lead)/(Target-Lead)`，正值表示朝目标方向移动。
 
-![Condition guidance](plots/condition_guidance.png)
+![条件引导结果](plots/condition_guidance.png)
 
 | 性质 | Lead 均值 | Generated 均值 | Target 均值 | Δ | Guidance ratio |
 |---|---:|---:|---:|---:|---:|
@@ -284,9 +284,9 @@ Counterfactual 对照显示目标条件对净电荷、风险和活性代理分�
 
 ### 9.6 性质分布与候选排序
 
-![Property distribution](plots/property_distribution.png)
+![性质分布对比](plots/property_distribution.png)
 
-![Composite score distribution](plots/composite_score_histogram.png)
+![候选综合得分分布](plots/composite_score_histogram.png)
 
 候选综合分数同时考虑预测活性、低溶血/低毒性、条件拟合、新颖性和训练集相似度。示例 Top 候选如下，完整列表见 [`results/generated_candidates.csv`](results/generated_candidates.csv)：
 

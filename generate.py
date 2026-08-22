@@ -69,7 +69,7 @@ def load_trained_trainer(cfg: ModelConfig = None) -> Trainer:
     return trainer
 
 
-# ===================== 描述符条件修改（用于条件引导生成） =====================
+# 描述符条件修改（用于条件引导生成）
 def modify_descriptor_to_target(orig_descriptor: np.ndarray,
                                 target_changes: Dict[str, float] = None,
                                 use_default_target: bool = True,
@@ -125,7 +125,7 @@ def modify_descriptor_to_target(orig_descriptor: np.ndarray,
     return des
 
 
-# ===================== 重构（任务核心：masked + 描述符 → original） =====================
+# 重构（任务核心：masked + 描述符 → original）
 def reconstruct_sequences(trainer: Trainer, sequences: List[str],
                           strategies: List[str] = None,
                           mask_ratio: float = 0.3,
@@ -219,7 +219,7 @@ def _hamming(a: str, b: str) -> int:
     return d
 
 
-# ===================== Lead peptide 条件优化生成 =====================
+# Lead peptide 条件优化生成
 def generate_from_lead_peptides(trainer: Trainer,
                                 leads: List[str],
                                 lead_ids: List[str] = None,
@@ -336,7 +336,7 @@ def generate_from_lead_peptides(trainer: Trainer,
     return pd.DataFrame(all_records)
 
 
-# ===================== 大规模候选生成入口 =====================
+# 大规模候选生成入口
 def run_generation_pipeline(trainer: Trainer = None) -> pd.DataFrame:
     """完整推理：生成候选肽并保存CSV"""
     if trainer is None:
