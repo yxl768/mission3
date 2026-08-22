@@ -225,13 +225,18 @@ def cdhit_cluster_sequences(df, identity_threshold=0.8, seed=42):
     return cluster_ids
 
 
-def split_dataset(df, val_ratio=0.15, test_ratio=0.15, seed=42, identity_threshold=0.8):
+def split_dataset(df, val_ratio=0.15, test_ratio=0.15, lead_ratio=0.10,
+                  seed=42, identity_threshold=0.8):
     """
-    CD-HIT风格聚类划分 train/val/test：
+    CD-HIT风格聚类划分 train/val/test/lead：
     1. 按 sequence identity 阈值聚类，同簇序列整体划分到同一split
     2. 避免高度相似序列跨集泄漏
     3. 按 label 分层，保证正负样本比例
+    4. lead/optimization split 与训练、测试完全独立
     """
+    # A sequence must belong to one split even if DBAASP has duplicate records.
+    # Keep a deterministic representative before label-wise clustering.
+    df = df.drop_duplicates(subset=["sequence"], keep="first").reset_index(drop=True)
     rng = np.random.RandomState(seed)
 
     df_pos = df[df["label"] == 1].copy().reset_index(drop=True)
@@ -253,35 +258,42 @@ def split_dataset(df, val_ratio=0.15, test_ratio=0.15, seed=42, identity_thresho
         n_clusters = len(unique_clusters)
         n_test = max(1, int(n_clusters * test_ratio))
         n_val = max(1, int(n_clusters * val_ratio))
+        n_lead = max(1, int(n_clusters * lead_ratio))
 
         test_clusters = set(unique_clusters[:n_test])
         val_clusters = set(unique_clusters[n_test:n_test + n_val])
-        train_clusters = set(unique_clusters[n_test + n_val:])
+        lead_clusters = set(unique_clusters[n_test + n_val:n_test + n_val + n_lead])
+        train_clusters = set(unique_clusters[n_test + n_val + n_lead:])
 
         train = d[d["cluster_id"].isin(train_clusters)].drop(columns=["cluster_id"])
         val = d[d["cluster_id"].isin(val_clusters)].drop(columns=["cluster_id"])
         test = d[d["cluster_id"].isin(test_clusters)].drop(columns=["cluster_id"])
+        lead = d[d["cluster_id"].isin(lead_clusters)].drop(columns=["cluster_id"])
 
         # 如果某个split为空，回退到随机划分
-        if len(train) == 0 or len(val) == 0 or len(test) == 0:
+        if len(train) == 0 or len(val) == 0 or len(test) == 0 or len(lead) == 0:
             rest, test = train_test_split(d, test_size=test_ratio, random_state=seed)
-            train, val = train_test_split(rest, test_size=val_ratio / (1 - test_ratio), random_state=seed)
+            rest, lead = train_test_split(rest, test_size=lead_ratio / (1 - test_ratio), random_state=seed)
+            train, val = train_test_split(rest, test_size=val_ratio / (1 - test_ratio - lead_ratio), random_state=seed)
             train = train.drop(columns=["cluster_id"]) if "cluster_id" in train.columns else train
             val = val.drop(columns=["cluster_id"]) if "cluster_id" in val.columns else val
             test = test.drop(columns=["cluster_id"]) if "cluster_id" in test.columns else test
+            lead = lead.drop(columns=["cluster_id"]) if "cluster_id" in lead.columns else lead
 
-        return train.reset_index(drop=True), val.reset_index(drop=True), test.reset_index(drop=True)
+        return (train.reset_index(drop=True), val.reset_index(drop=True),
+                test.reset_index(drop=True), lead.reset_index(drop=True))
 
-    tr_p, va_p, te_p = _split_one(df_pos)
-    tr_n, va_n, te_n = _split_one(df_neg)
+    tr_p, va_p, te_p, le_p = _split_one(df_pos)
+    tr_n, va_n, te_n, le_n = _split_one(df_neg)
 
     train = pd.concat([tr_p, tr_n]).sample(frac=1.0, random_state=seed).reset_index(drop=True)
     val = pd.concat([va_p, va_n]).sample(frac=1.0, random_state=seed).reset_index(drop=True)
     test = pd.concat([te_p, te_n]).sample(frac=1.0, random_state=seed).reset_index(drop=True)
+    lead = pd.concat([le_p, le_n]).sample(frac=1.0, random_state=seed).reset_index(drop=True)
 
     print(f"[DATA] CD-HIT聚类划分(identity_threshold={identity_threshold}): "
-          f"train={len(train)}, val={len(val)}, test={len(test)}")
-    return train, val, test
+            f"train={len(train)}, val={len(val)}, test={len(test)}, lead={len(lead)}")
+    return train, val, test, lead
 
 
 def load_dbaasp_dataset():
@@ -331,16 +343,16 @@ def build_and_save_dataset():
 
     print(f"[DATA] 过滤后样本数: {len(df)}")
 
-    train, val, test = split_dataset(df)
-    print(f"[DATA] 划分: train={len(train)}, val={len(val)}, test={len(test)}")
+    train, val, test, lead = split_dataset(df)
+    print(f"[DATA] 划分: train={len(train)}, val={len(val)}, test={len(test)}, lead={len(lead)}")
 
     # 保存CSV
     train.to_csv(os.path.join(DATA_DIR, "train.csv"), index=False, encoding="utf-8")
     val.to_csv(os.path.join(DATA_DIR, "val.csv"), index=False, encoding="utf-8")
     test.to_csv(os.path.join(DATA_DIR, "test.csv"), index=False, encoding="utf-8")
+    lead.to_csv(os.path.join(DATA_DIR, "lead.csv"), index=False, encoding="utf-8")
 
-    # 保存示例lead peptides（从测试集中的阳性样本挑选，用于后续优化生成）
-    leads = test[test["label"] == 1].head(10).copy()
+    leads = lead[lead["label"] == 1].head(50).copy()
     if "seq_id" in leads.columns:
         leads = leads.rename(columns={"seq_id": "lead_id"})
     elif "dbaasp_id" in leads.columns:
@@ -349,7 +361,7 @@ def build_and_save_dataset():
     print(f"[DATA] Lead peptides数量: {len(leads)}")
     print("[DATA] 数据集已保存到", DATA_DIR)
 
-    return train, val, test
+    return train, val, test, lead
 
 
 def load_saved_dataset():
@@ -358,12 +370,14 @@ def load_saved_dataset():
         os.path.join(DATA_DIR, "train.csv"),
         os.path.join(DATA_DIR, "val.csv"),
         os.path.join(DATA_DIR, "test.csv"),
+        os.path.join(DATA_DIR, "lead.csv"),
     ]
     if all(os.path.exists(p) for p in paths):
         train = pd.read_csv(paths[0])
         val = pd.read_csv(paths[1])
         test = pd.read_csv(paths[2])
-        return train, val, test
+        lead = pd.read_csv(paths[3])
+        return train, val, test, lead
     return None, None, None
 
 

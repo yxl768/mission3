@@ -1,0 +1,121 @@
+======================================================================
+[STEP 2] CVAE模型训练 (Conditional VAE for AMP masked reconstruction)
+======================================================================
+[TRAIN] 数据加载完成 train=1245, val=334
+[TRAIN] 使用设备: cpu
+Ep 001/80 | time 18.7s | T total=6.935 recon=2.840 kl=1.1182 | V total=6.522 recon=2.639 kl=0.9509 | mask_acc=0.219 seq_rec=0.054
+  [SAVE] best model saved -> D:\mission3\mission3\checkpoints\best_cvae.pt
+Ep 002/80 | time 13.6s | T total=6.188 recon=2.531 kl=1.0211 | V total=6.061 recon=2.446 kl=0.9936 | mask_acc=0.264 seq_rec=0.066
+  [SAVE] best model saved -> D:\mission3\mission3\checkpoints\best_cvae.pt
+Ep 003/80 | time 12.4s | T total=5.812 recon=2.340 kl=1.2730 | V total=5.905 recon=2.337 kl=1.2047 | mask_acc=0.262 seq_rec=0.069
+  [SAVE] best model saved -> D:\mission3\mission3\checkpoints\best_cvae.pt
+Ep 004/80 | time 12.3s | T total=5.553 recon=2.216 kl=1.2181 | V total=5.628 recon=2.224 kl=1.3022 | mask_acc=0.260 seq_rec=0.066
+  [SAVE] best model saved -> D:\mission3\mission3\checkpoints\best_cvae.pt
+Ep 005/80 | time 12.4s | T total=5.354 recon=2.093 kl=1.0772 | V total=5.453 recon=2.161 kl=0.9318 | mask_acc=0.317 seq_rec=0.078
+  [SAVE] best model saved -> D:\mission3\mission3\checkpoints\best_cvae.pt
+Ep 006/80 | time 12.3s | T total=5.116 recon=1.974 kl=0.8968 | V total=5.191 recon=2.050 kl=0.6624 | mask_acc=0.325 seq_rec=0.075
+  [SAVE] best model saved -> D:\mission3\mission3\checkpoints\best_cvae.pt
+Ep 007/80 | time 12.1s | T total=4.917 recon=1.878 kl=0.6701 | V total=5.148 recon=2.010 kl=0.5554 | mask_acc=0.344 seq_rec=0.072
+  [SAVE] best model saved -> D:\mission3\mission3\checkpoints\best_cvae.pt
+Ep 008/80 | time 12.2s | T total=4.776 recon=1.807 kl=0.5880 | V total=5.150 recon=1.974 kl=0.5509 | mask_acc=0.326 seq_rec=0.084
+Ep 009/80 | time 12.2s | T total=4.651 recon=1.732 kl=0.4760 | V total=4.991 recon=1.923 kl=0.4391 | mask_acc=0.353 seq_rec=0.093
+  [SAVE] best model saved -> D:\mission3\mission3\checkpoints\best_cvae.pt
+Ep 010/80 | time 12.3s | T total=4.534 recon=1.661 kl=0.4139 | V total=4.907 recon=1.879 kl=0.3629 | mask_acc=0.346 seq_rec=0.102
+  [SAVE] best model saved -> D:\mission3\mission3\checkpoints\best_cvae.pt
+Ep 011/80 | time 12.4s | T total=4.376 recon=1.590 kl=0.3473 | V total=4.838 recon=1.855 kl=0.3224 | mask_acc=0.356 seq_rec=0.096
+  [SAVE] best model saved -> D:\mission3\mission3\checkpoints\best_cvae.pt
+Ep 012/80 | time 12.4s | T total=4.264 recon=1.523 kl=0.3171 | V total=4.781 recon=1.840 kl=0.3081 | mask_acc=0.385 seq_rec=0.099
+  [SAVE] best model saved -> D:\mission3\mission3\checkpoints\best_cvae.pt
+Ep 013/80 | time 12.4s | T total=4.156 recon=1.476 kl=0.2877 | V total=4.717 recon=1.804 kl=0.2700 | mask_acc=0.379 seq_rec=0.084
+  [SAVE] best model saved -> D:\mission3\mission3\checkpoints\best_cvae.pt
+Ep 014/80 | time 12.6s | T total=4.063 recon=1.422 kl=0.2678 | V total=4.617 recon=1.782 kl=0.2371 | mask_acc=0.372 seq_rec=0.120
+  [SAVE] best model saved -> D:\mission3\mission3\checkpoints\best_cvae.pt
+Ep 015/80 | time 12.3s | T total=3.945 recon=1.382 kl=0.2456 | V total=4.561 recon=1.788 kl=0.2153 | mask_acc=0.404 seq_rec=0.117
+  [SAVE] best model saved -> D:\mission3\mission3\checkpoints\best_cvae.pt
+Ep 016/80 | time 14.7s | T total=3.830 recon=1.320 kl=0.2232 | V total=4.532 recon=1.772 kl=0.1983 | mask_acc=0.404 seq_rec=0.111
+  [SAVE] best model saved -> D:\mission3\mission3\checkpoints\best_cvae.pt
+Ep 017/80 | time 31.1s | T total=3.719 recon=1.276 kl=0.2081 | V total=4.504 recon=1.744 kl=0.1997 | mask_acc=0.413 seq_rec=0.135
+  [SAVE] best model saved -> D:\mission3\mission3\checkpoints\best_cvae.pt
+Ep 018/80 | time 27.8s | T total=3.654 recon=1.216 kl=0.2011 | V total=4.488 recon=1.733 kl=0.1829 | mask_acc=0.420 seq_rec=0.123
+  [SAVE] best model saved -> D:\mission3\mission3\checkpoints\best_cvae.pt
+Ep 019/80 | time 28.3s | T total=3.532 recon=1.186 kl=0.1827 | V total=4.430 recon=1.737 kl=0.1766 | mask_acc=0.407 seq_rec=0.102
+  [SAVE] best model saved -> D:\mission3\mission3\checkpoints\best_cvae.pt
+Ep 020/80 | time 30.3s | T total=3.453 recon=1.140 kl=0.1746 | V total=4.369 recon=1.724 kl=0.1695 | mask_acc=0.421 seq_rec=0.120
+  [SAVE] best model saved -> D:\mission3\mission3\checkpoints\best_cvae.pt
+Ep 021/80 | time 29.0s | T total=3.382 recon=1.107 kl=0.1659 | V total=4.431 recon=1.736 kl=0.1500 | mask_acc=0.413 seq_rec=0.138
+Ep 022/80 | time 29.9s | T total=3.248 recon=1.060 kl=0.1513 | V total=4.401 recon=1.693 kl=0.1440 | mask_acc=0.415 seq_rec=0.129
+Ep 023/80 | time 31.8s | T total=3.193 recon=1.021 kl=0.1441 | V total=4.401 recon=1.707 kl=0.1333 | mask_acc=0.445 seq_rec=0.144
+Ep 024/80 | time 30.1s | T total=3.078 recon=0.991 kl=0.1345 | V total=4.332 recon=1.701 kl=0.1269 | mask_acc=0.429 seq_rec=0.138
+  [SAVE] best model saved -> D:\mission3\mission3\checkpoints\best_cvae.pt
+Ep 025/80 | time 29.3s | T total=3.036 recon=0.966 kl=0.1289 | V total=4.284 recon=1.714 kl=0.1177 | mask_acc=0.439 seq_rec=0.165
+  [SAVE] best model saved -> D:\mission3\mission3\checkpoints\best_cvae.pt
+Ep 026/80 | time 29.4s | T total=2.937 recon=0.937 kl=0.1208 | V total=4.145 recon=1.707 kl=0.1105 | mask_acc=0.467 seq_rec=0.162
+  [SAVE] best model saved -> D:\mission3\mission3\checkpoints\best_cvae.pt
+Ep 027/80 | time 30.8s | T total=2.867 recon=0.907 kl=0.1145 | V total=4.245 recon=1.721 kl=0.1061 | mask_acc=0.444 seq_rec=0.150
+Ep 028/80 | time 30.3s | T total=2.805 recon=0.873 kl=0.1078 | V total=4.225 recon=1.728 kl=0.0983 | mask_acc=0.450 seq_rec=0.153
+Ep 029/80 | time 30.4s | T total=2.716 recon=0.847 kl=0.1038 | V total=4.125 recon=1.726 kl=0.1016 | mask_acc=0.474 seq_rec=0.156
+  [SAVE] best model saved -> D:\mission3\mission3\checkpoints\best_cvae.pt
+Ep 030/80 | time 29.4s | T total=2.660 recon=0.826 kl=0.1015 | V total=4.203 recon=1.747 kl=0.0925 | mask_acc=0.463 seq_rec=0.144
+Ep 031/80 | time 28.3s | T total=2.630 recon=0.807 kl=0.0987 | V total=4.223 recon=1.729 kl=0.0883 | mask_acc=0.466 seq_rec=0.162
+Ep 032/80 | time 27.4s | T total=2.546 recon=0.784 kl=0.0929 | V total=4.047 recon=1.735 kl=0.0878 | mask_acc=0.474 seq_rec=0.207
+  [SAVE] best model saved -> D:\mission3\mission3\checkpoints\best_cvae.pt
+Ep 033/80 | time 27.1s | T total=2.466 recon=0.756 kl=0.0906 | V total=4.140 recon=1.732 kl=0.0825 | mask_acc=0.482 seq_rec=0.222
+Ep 034/80 | time 31.9s | T total=2.409 recon=0.738 kl=0.0861 | V total=4.180 recon=1.751 kl=0.0813 | mask_acc=0.478 seq_rec=0.183
+Ep 035/80 | time 31.2s | T total=2.370 recon=0.719 kl=0.0840 | V total=4.056 recon=1.758 kl=0.0756 | mask_acc=0.503 seq_rec=0.198
+Ep 036/80 | time 28.2s | T total=2.304 recon=0.705 kl=0.0811 | V total=4.155 recon=1.768 kl=0.0723 | mask_acc=0.478 seq_rec=0.216
+Ep 037/80 | time 29.9s | T total=2.257 recon=0.679 kl=0.0773 | V total=4.082 recon=1.785 kl=0.0729 | mask_acc=0.487 seq_rec=0.195
+Ep 038/80 | time 29.9s | T total=2.232 recon=0.671 kl=0.0763 | V total=4.254 recon=1.790 kl=0.0706 | mask_acc=0.488 seq_rec=0.198
+Ep 039/80 | time 27.1s | T total=2.167 recon=0.653 kl=0.0733 | V total=4.216 recon=1.785 kl=0.0688 | mask_acc=0.490 seq_rec=0.207
+Ep 040/80 | time 29.9s | T total=2.141 recon=0.641 kl=0.0705 | V total=4.078 recon=1.801 kl=0.0635 | mask_acc=0.504 seq_rec=0.225
+Ep 041/80 | time 30.9s | T total=2.129 recon=0.625 kl=0.0674 | V total=4.125 recon=1.824 kl=0.0626 | mask_acc=0.506 seq_rec=0.219
+Ep 042/80 | time 30.7s | T total=2.111 recon=0.618 kl=0.0668 | V total=4.115 recon=1.822 kl=0.0615 | mask_acc=0.494 seq_rec=0.210
+Ep 043/80 | time 30.1s | T total=2.054 recon=0.611 kl=0.0634 | V total=4.121 recon=1.836 kl=0.0609 | mask_acc=0.499 seq_rec=0.204
+Ep 044/80 | time 28.9s | T total=1.968 recon=0.595 kl=0.0623 | V total=4.162 recon=1.849 kl=0.0573 | mask_acc=0.509 seq_rec=0.201
+Ep 045/80 | time 30.9s | T total=1.959 recon=0.582 kl=0.0599 | V total=4.099 recon=1.830 kl=0.0559 | mask_acc=0.495 seq_rec=0.216
+Ep 046/80 | time 28.2s | T total=1.924 recon=0.569 kl=0.0584 | V total=4.071 recon=1.848 kl=0.0540 | mask_acc=0.523 seq_rec=0.237
+Ep 047/80 | time 32.0s | T total=1.910 recon=0.563 kl=0.0562 | V total=4.211 recon=1.849 kl=0.0532 | mask_acc=0.510 seq_rec=0.168
+Ep 048/80 | time 29.8s | T total=1.861 recon=0.549 kl=0.0532 | V total=4.206 recon=1.867 kl=0.0497 | mask_acc=0.505 seq_rec=0.225
+Ep 049/80 | time 30.6s | T total=1.806 recon=0.545 kl=0.0521 | V total=4.203 recon=1.883 kl=0.0490 | mask_acc=0.525 seq_rec=0.210
+Ep 050/80 | time 30.9s | T total=1.800 recon=0.528 kl=0.0512 | V total=4.045 recon=1.870 kl=0.0482 | mask_acc=0.526 seq_rec=0.186
+  [SAVE] best model saved -> D:\mission3\mission3\checkpoints\best_cvae.pt
+Ep 051/80 | time 28.9s | T total=1.732 recon=0.516 kl=0.0494 | V total=4.204 recon=1.889 kl=0.0455 | mask_acc=0.510 seq_rec=0.219
+Ep 052/80 | time 30.9s | T total=1.781 recon=0.516 kl=0.0480 | V total=4.161 recon=1.895 kl=0.0446 | mask_acc=0.531 seq_rec=0.216
+Ep 053/80 | time 32.4s | T total=1.757 recon=0.510 kl=0.0470 | V total=4.070 recon=1.890 kl=0.0445 | mask_acc=0.531 seq_rec=0.237
+Ep 054/80 | time 31.4s | T total=1.729 recon=0.499 kl=0.0459 | V total=4.097 recon=1.898 kl=0.0415 | mask_acc=0.537 seq_rec=0.228
+Ep 055/80 | time 29.2s | T total=1.693 recon=0.499 kl=0.0441 | V total=4.203 recon=1.911 kl=0.0417 | mask_acc=0.539 seq_rec=0.204
+Ep 056/80 | time 29.9s | T total=1.657 recon=0.490 kl=0.0432 | V total=4.091 recon=1.908 kl=0.0408 | mask_acc=0.550 seq_rec=0.260
+Ep 057/80 | time 28.6s | T total=1.649 recon=0.483 kl=0.0426 | V total=4.102 recon=1.909 kl=0.0396 | mask_acc=0.543 seq_rec=0.222
+Ep 058/80 | time 28.7s | T total=1.644 recon=0.485 kl=0.0416 | V total=4.150 recon=1.925 kl=0.0384 | mask_acc=0.552 seq_rec=0.257
+Ep 059/80 | time 28.8s | T total=1.623 recon=0.475 kl=0.0411 | V total=4.179 recon=1.922 kl=0.0380 | mask_acc=0.546 seq_rec=0.254
+Ep 060/80 | time 27.6s | T total=1.611 recon=0.469 kl=0.0395 | V total=4.185 recon=1.922 kl=0.0373 | mask_acc=0.548 seq_rec=0.228
+Ep 061/80 | time 28.9s | T total=1.572 recon=0.467 kl=0.0386 | V total=4.164 recon=1.932 kl=0.0368 | mask_acc=0.531 seq_rec=0.234
+Ep 062/80 | time 29.8s | T total=1.561 recon=0.467 kl=0.0382 | V total=4.283 recon=1.945 kl=0.0360 | mask_acc=0.519 seq_rec=0.216
+Ep 063/80 | time 27.1s | T total=1.569 recon=0.465 kl=0.0380 | V total=4.106 recon=1.932 kl=0.0354 | mask_acc=0.547 seq_rec=0.222
+Ep 064/80 | time 28.0s | T total=1.568 recon=0.461 kl=0.0370 | V total=4.181 recon=1.933 kl=0.0343 | mask_acc=0.539 seq_rec=0.237
+Ep 065/80 | time 29.1s | T total=1.565 recon=0.463 kl=0.0367 | V total=4.142 recon=1.936 kl=0.0348 | mask_acc=0.534 seq_rec=0.237
+Ep 066/80 | time 28.1s | T total=1.497 recon=0.457 kl=0.0362 | V total=4.173 recon=1.940 kl=0.0342 | mask_acc=0.553 seq_rec=0.275
+Ep 067/80 | time 29.3s | T total=1.524 recon=0.455 kl=0.0357 | V total=4.217 recon=1.952 kl=0.0339 | mask_acc=0.537 seq_rec=0.234
+Ep 068/80 | time 29.8s | T total=1.523 recon=0.455 kl=0.0352 | V total=4.152 recon=1.940 kl=0.0325 | mask_acc=0.560 seq_rec=0.257
+Ep 069/80 | time 29.7s | T total=1.503 recon=0.450 kl=0.0349 | V total=4.252 recon=1.943 kl=0.0325 | mask_acc=0.534 seq_rec=0.213
+Ep 070/80 | time 29.9s | T total=1.490 recon=0.448 kl=0.0345 | V total=4.313 recon=1.948 kl=0.0321 | mask_acc=0.537 seq_rec=0.225
+Ep 071/80 | time 30.2s | T total=1.463 recon=0.445 kl=0.0343 | V total=4.139 recon=1.942 kl=0.0327 | mask_acc=0.531 seq_rec=0.225
+Ep 072/80 | time 29.8s | T total=1.503 recon=0.446 kl=0.0337 | V total=4.160 recon=1.947 kl=0.0323 | mask_acc=0.537 seq_rec=0.237
+Ep 073/80 | time 29.3s | T total=1.506 recon=0.448 kl=0.0337 | V total=4.023 recon=1.949 kl=0.0312 | mask_acc=0.561 seq_rec=0.246
+  [SAVE] best model saved -> D:\mission3\mission3\checkpoints\best_cvae.pt
+Ep 074/80 | time 28.9s | T total=1.500 recon=0.440 kl=0.0338 | V total=4.205 recon=1.947 kl=0.0313 | mask_acc=0.520 seq_rec=0.243
+Ep 075/80 | time 30.0s | T total=1.481 recon=0.445 kl=0.0336 | V total=4.116 recon=1.941 kl=0.0314 | mask_acc=0.552 seq_rec=0.251
+Ep 076/80 | time 28.2s | T total=1.507 recon=0.446 kl=0.0331 | V total=4.119 recon=1.941 kl=0.0312 | mask_acc=0.554 seq_rec=0.228
+Ep 077/80 | time 28.5s | T total=1.465 recon=0.442 kl=0.0334 | V total=4.054 recon=1.946 kl=0.0315 | mask_acc=0.560 seq_rec=0.249
+Ep 078/80 | time 28.8s | T total=1.489 recon=0.448 kl=0.0331 | V total=4.245 recon=1.937 kl=0.0315 | mask_acc=0.529 seq_rec=0.225
+Ep 079/80 | time 29.3s | T total=1.466 recon=0.447 kl=0.0334 | V total=4.098 recon=1.947 kl=0.0313 | mask_acc=0.540 seq_rec=0.237
+Ep 080/80 | time 30.3s | T total=1.473 recon=0.442 kl=0.0332 | V total=4.078 recon=1.944 kl=0.0315 | mask_acc=0.540 seq_rec=0.231
+[TRAIN] 训练结束。history 已保存到 D:\mission3\mission3\checkpoints\history.json
+
+======================================================================
+[PIPELINE] 管线执行完成。总耗时: 2109.7s
+[PIPELINE] 核心产物:
+  - 模型: D:\mission3\mission3\checkpoints\best_cvae.pt
+  - 候选肽: D:\mission3\mission3\results\generated_candidates.csv
+  - 报告: D:\mission3\mission3\results\REPORT.md
+  - 可视化: D:\mission3\mission3\plots/*.png
+======================================================================

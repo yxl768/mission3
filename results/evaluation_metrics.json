@@ -3,200 +3,298 @@
     {
       "strategy": "contiguous",
       "n": 240,
-      "avg_mask_acc": 0.2306825813075816,
-      "median_mask_acc": 0.16666666666666666,
-      "seq_recovery_rate": 0,
-      "avg_edit_distance": 15.0625,
-      "avg_n_mask": 5.833333333333333
+      "avg_mask_acc": 0.4782338032338033,
+      "median_mask_acc": 0.42857142857142855,
+      "seq_recovery_rate": 0.10416666666666667,
+      "avg_edit_distance": 2.925,
+      "avg_n_mask": 5.295833333333333
     },
     {
       "strategy": "motif_preserving",
       "n": 240,
-      "avg_mask_acc": 0.2372511169386172,
-      "median_mask_acc": 0.2,
-      "seq_recovery_rate": 0,
-      "avg_edit_distance": 14.770833333333334,
-      "avg_n_mask": 5.883333333333334
+      "avg_mask_acc": 0.5557327510452509,
+      "median_mask_acc": 0.5227272727272727,
+      "seq_recovery_rate": 0.15833333333333333,
+      "avg_edit_distance": 2.6041666666666665,
+      "avg_n_mask": 5.458333333333333
     },
     {
       "strategy": "property_guided",
       "n": 240,
-      "avg_mask_acc": 0.22387263199763213,
-      "median_mask_acc": 0.16666666666666666,
-      "seq_recovery_rate": 0,
-      "avg_edit_distance": 15.2,
-      "avg_n_mask": 5.883333333333334
+      "avg_mask_acc": 0.624882282069782,
+      "median_mask_acc": 0.6666666666666666,
+      "seq_recovery_rate": 0.225,
+      "avg_edit_distance": 2.275,
+      "avg_n_mask": 5.458333333333333
     },
     {
       "strategy": "random",
       "n": 240,
-      "avg_mask_acc": 0.23443004911754925,
-      "median_mask_acc": 0.2,
-      "seq_recovery_rate": 0,
-      "avg_edit_distance": 14.9125,
-      "avg_n_mask": 5.883333333333334
+      "avg_mask_acc": 0.5661122326747327,
+      "median_mask_acc": 0.6,
+      "seq_recovery_rate": 0.17083333333333334,
+      "avg_edit_distance": 2.533333333333333,
+      "avg_n_mask": 5.458333333333333
     }
   ],
   "mask_ratio_performance": [
     {
       "mask_ratio": 0.15,
       "n": 240,
-      "avg_mask_acc": 0.23923611111111115,
-      "median_mask_acc": 0.0,
-      "seq_recovery_rate": 0,
-      "avg_edit_distance": 15.091666666666667,
-      "avg_n_mask": 2.933333333333333
+      "avg_mask_acc": 0.640625,
+      "median_mask_acc": 0.6666666666666666,
+      "seq_recovery_rate": 0.4,
+      "avg_edit_distance": 0.9833333333333333,
+      "avg_n_mask": 2.625
     },
     {
       "mask_ratio": 0.25,
       "n": 240,
-      "avg_mask_acc": 0.24284722222222221,
-      "median_mask_acc": 0.2,
-      "seq_recovery_rate": 0,
-      "avg_edit_distance": 14.8125,
-      "avg_n_mask": 4.5875
+      "avg_mask_acc": 0.5721527777777776,
+      "median_mask_acc": 0.6666666666666666,
+      "seq_recovery_rate": 0.18333333333333332,
+      "avg_edit_distance": 1.8583333333333334,
+      "avg_n_mask": 4.25
     },
     {
       "mask_ratio": 0.35,
       "n": 240,
-      "avg_mask_acc": 0.24126322751322754,
-      "median_mask_acc": 0.2,
-      "seq_recovery_rate": 0,
-      "avg_edit_distance": 14.825,
-      "avg_n_mask": 6.6
+      "avg_mask_acc": 0.5324421296296296,
+      "median_mask_acc": 0.5,
+      "seq_recovery_rate": 0.06666666666666667,
+      "avg_edit_distance": 2.870833333333333,
+      "avg_n_mask": 6.066666666666666
     },
     {
       "mask_ratio": 0.5,
       "n": 240,
-      "avg_mask_acc": 0.20288981851481871,
-      "median_mask_acc": 0.16666666666666666,
-      "seq_recovery_rate": 0,
-      "avg_edit_distance": 15.216666666666667,
-      "avg_n_mask": 9.3625
+      "avg_mask_acc": 0.47974116161616165,
+      "median_mask_acc": 0.5,
+      "seq_recovery_rate": 0.008333333333333333,
+      "avg_edit_distance": 4.625,
+      "avg_n_mask": 8.729166666666666
     }
   ],
   "generation_quality": {
-    "total": 983,
+    "total": 3600,
     "valid_rate": 1.0,
-    "unique_rate": 1.0,
-    "novel_rate": 1.0,
-    "avg_nn_similarity": 0.3801393210887909
+    "unique_rate": 0.6875,
+    "novel_rate": 0.9986111111111111,
+    "avg_nn_similarity": 0.4550603926181793
+  },
+  "mic_stratification": {
+    "available": true,
+    "active_threshold_ug_ml": 16,
+    "inactive_threshold_ug_ml": 64,
+    "active_n": 996,
+    "inactive_n": 337,
+    "active_probability_mean": 0.5022903227411822,
+    "inactive_probability_mean": 0.3170324998976109,
+    "roc_auc": 0.757978501543265
   },
   "condition_guidance": {
     "net_charge": {
-      "lead_mean": 3.7567459362383557,
-      "gen_mean": 5.079160151167655,
-      "target_mean": 5.85872529069623,
-      "delta_lead_to_gen": 1.3224142149292994,
-      "guidance_ratio": 0.6291280702280568
+      "lead_mean": 4.16039128781688,
+      "gen_mean": 5.666875642543741,
+      "target_mean": 6.7243454241752625,
+      "delta_lead_to_gen": 1.5064843547268607,
+      "guidance_ratio": 0.5875629104920497
     },
     "GRAVY": {
-      "lead_mean": -0.197088869760286,
-      "gen_mean": -0.09226360264744828,
-      "target_mean": 0.03838980872096875,
-      "delta_lead_to_gen": 0.10482526711283773,
-      "guidance_ratio": 0.4451582104542103
+      "lead_mean": 0.05750047657307733,
+      "gen_mean": -0.3075788757361331,
+      "target_mean": -0.05446325362659991,
+      "delta_lead_to_gen": -0.3650793523092104,
+      "guidance_ratio": 3.2606930088710357
     },
     "hydrophobic_ratio": {
-      "lead_mean": 0.4293892323342986,
-      "gen_mean": 0.40550053370367334,
-      "target_mean": 0.453969403419223,
-      "delta_lead_to_gen": -0.02388869863062526,
-      "guidance_ratio": -0.9718686883052974
+      "lead_mean": 0.4750397715907895,
+      "gen_mean": 0.42925547445723283,
+      "target_mean": 0.42978938311338427,
+      "delta_lead_to_gen": -0.04578429713355664,
+      "guidance_ratio": 1.0117989850278972
     },
     "KRH_ratio": {
-      "lead_mean": 0.2810060776795287,
-      "gen_mean": 0.30723113973420146,
-      "target_mean": 0.37712003170898223,
-      "delta_lead_to_gen": 0.026225062054672788,
-      "guidance_ratio": 0.2728538464522672
+      "lead_mean": 0.2827179539180764,
+      "gen_mean": 0.3623878375975296,
+      "target_mean": 0.3678794872760773,
+      "delta_lead_to_gen": 0.07966988367945321,
+      "guidance_ratio": 0.9355149037129014
     },
     "hemolysis_risk": {
-      "lead_mean": 0.5147466503232833,
-      "gen_mean": 0.3595952098504684,
-      "target_mean": 0.15000000596046448,
-      "delta_lead_to_gen": -0.15515144047281487,
-      "guidance_ratio": 0.425367698019131
+      "lead_mean": 0.18733963980454096,
+      "gen_mean": 0.15195708017727866,
+      "target_mean": 0.04000000050291419,
+      "delta_lead_to_gen": -0.035382559627262306,
+      "guidance_ratio": 0.24014284136279712
     },
     "toxicity_risk": {
-      "lead_mean": 0.24985944801047189,
-      "gen_mean": 0.18213391428174075,
-      "target_mean": 0.15000000596046448,
-      "delta_lead_to_gen": -0.06772553372873114,
-      "guidance_ratio": 0.678208613410995
+      "lead_mean": 0.13373861369482973,
+      "gen_mean": 0.10681318574603442,
+      "target_mean": 0.04000000050291419,
+      "delta_lead_to_gen": -0.026925427948795308,
+      "guidance_ratio": 0.2872394526860515
     },
     "aromatic_ratio": {
-      "lead_mean": 0.09650768187390825,
-      "gen_mean": 0.08452410997813316,
-      "target_mean": 0.0728790738173625,
-      "delta_lead_to_gen": -0.011983571895775091,
-      "guidance_ratio": 0.5071636834085673
+      "lead_mean": 0.09365564164850129,
+      "gen_mean": 0.07284232128831791,
+      "target_mean": 0.07996333539485931,
+      "delta_lead_to_gen": -0.02081332036018338,
+      "guidance_ratio": 1.5200741186056435
     },
     "length": {
-      "lead_mean": 20.15768056968464,
-      "gen_mean": 20.2177009155646,
-      "target_mean": 20.15768056968464,
-      "delta_lead_to_gen": 0.06002034587995908,
+      "lead_mean": 16.92,
+      "gen_mean": 16.92,
+      "target_mean": 16.92,
+      "delta_lead_to_gen": 0.0,
       "guidance_ratio": null
+    }
+  },
+  "counterfactual_conditions": {
+    "default": {
+      "n": 900,
+      "net_charge": 5.570022467935413,
+      "GRAVY": -0.25092016051167,
+      "hydrophobic_ratio": 0.43604806290956577,
+      "hemolysis_risk": 0.1596327797710134,
+      "toxicity_risk": 0.1125674883894378,
+      "activity_probability": 0.5410837433536337,
+      "synthesis_feasibility": 0.9131651279103754
+    },
+    "higher_charge": {
+      "n": 900,
+      "net_charge": 5.802444525248823,
+      "GRAVY": -0.33048005294242494,
+      "hydrophobic_ratio": 0.42855994401208225,
+      "hemolysis_risk": 0.1509086613597557,
+      "toxicity_risk": 0.10640925667342681,
+      "activity_probability": 0.559836069181211,
+      "synthesis_feasibility": 0.9163490373678013
+    },
+    "lower_hemolysis": {
+      "n": 900,
+      "net_charge": 5.59874069794052,
+      "GRAVY": -0.28007744045807437,
+      "hydrophobic_ratio": 0.4362217133097382,
+      "hemolysis_risk": 0.15514302082706674,
+      "toxicity_risk": 0.10854813709524963,
+      "activity_probability": 0.5487558155626979,
+      "synthesis_feasibility": 0.9143644159619206
+    },
+    "lower_hydrophobic": {
+      "n": 900,
+      "net_charge": 5.696294879050312,
+      "GRAVY": -0.3688378490323454,
+      "hydrophobic_ratio": 0.416192177597551,
+      "hemolysis_risk": 0.14214385875128013,
+      "toxicity_risk": 0.09972786082602345,
+      "activity_probability": 0.5660192281645487,
+      "synthesis_feasibility": 0.9156727892119378
     }
   },
   "property_distribution": {
     "length": {
-      "train_pos_mean": 16.71560287475586,
-      "train_pos_std": 5.933837890625,
-      "gen_mean": 20.217700958251953,
-      "gen_std": 5.3373870849609375,
-      "mean_abs_diff": 3.5020980834960938
+      "train_pos_mean": 16.94388198852539,
+      "train_pos_std": 5.813221454620361,
+      "gen_mean": 16.920000076293945,
+      "gen_std": 6.427565574645996,
+      "mean_abs_diff": 0.023881912231445312,
+      "ks_statistic": 0.1146458141674333,
+      "ks_pvalue": 5.118527823810837e-10,
+      "wasserstein_distance": 0.8117019319227232
     },
     "net_charge": {
-      "train_pos_mean": 3.6807773113250732,
-      "train_pos_std": 2.243399143218994,
-      "gen_mean": 5.079160213470459,
-      "gen_std": 1.902796983718872,
-      "mean_abs_diff": 1.3983829021453857
+      "train_pos_mean": 3.6386208534240723,
+      "train_pos_std": 2.285747766494751,
+      "gen_mean": 5.666876316070557,
+      "gen_std": 2.9089853763580322,
+      "mean_abs_diff": 2.0282554626464844,
+      "ks_statistic": 0.3218123275068997,
+      "ks_pvalue": 3.3306690738754696e-16,
+      "wasserstein_distance": 2.028258041092364
     },
     "GRAVY": {
-      "train_pos_mean": 0.003467536997050047,
-      "train_pos_std": 0.9540545344352722,
-      "gen_mean": -0.0922636017203331,
-      "gen_std": 0.7552423477172852,
-      "mean_abs_diff": 0.09573113918304443
+      "train_pos_mean": 0.05062275752425194,
+      "train_pos_std": 0.9822602272033691,
+      "gen_mean": -0.3075788617134094,
+      "gen_std": 0.8858049511909485,
+      "mean_abs_diff": 0.35820162296295166,
+      "ks_statistic": 0.2163508126341613,
+      "ks_pvalue": 3.3306690738754696e-16,
+      "wasserstein_distance": 0.37544300483867776
     },
     "hydrophobic_ratio": {
-      "train_pos_mean": 0.46525099873542786,
-      "train_pos_std": 0.13946236670017242,
-      "gen_mean": 0.4055005609989166,
-      "gen_std": 0.1496650129556656,
-      "mean_abs_diff": 0.05975043773651123
+      "train_pos_mean": 0.4705231785774231,
+      "train_pos_std": 0.14222782850265503,
+      "gen_mean": 0.42925548553466797,
+      "gen_std": 0.14181779325008392,
+      "mean_abs_diff": 0.04126769304275513,
+      "ks_statistic": 0.17877261576203618,
+      "ks_pvalue": 3.3306690738754696e-16,
+      "wasserstein_distance": 0.04285474441178637
     },
     "KRH_ratio": {
-      "train_pos_mean": 0.28016558289527893,
-      "train_pos_std": 0.1354948878288269,
-      "gen_mean": 0.3072311282157898,
-      "gen_std": 0.07687243819236755,
-      "mean_abs_diff": 0.027065545320510864
+      "train_pos_mean": 0.27263444662094116,
+      "train_pos_std": 0.1316278725862503,
+      "gen_mean": 0.36238783597946167,
+      "gen_std": 0.13236454129219055,
+      "mean_abs_diff": 0.08975338935852051,
+      "ks_statistic": 0.28550163549013596,
+      "ks_pvalue": 3.3306690738754696e-16,
+      "wasserstein_distance": 0.09087242925599967
     },
     "aromatic_ratio": {
-      "train_pos_mean": 0.10605787485837936,
-      "train_pos_std": 0.10188891738653183,
-      "gen_mean": 0.08452411741018295,
-      "gen_std": 0.05899185314774513,
-      "mean_abs_diff": 0.02153375744819641
+      "train_pos_mean": 0.10625945031642914,
+      "train_pos_std": 0.10347826033830643,
+      "gen_mean": 0.0728423222899437,
+      "gen_std": 0.06923124939203262,
+      "mean_abs_diff": 0.03341712802648544,
+      "ks_statistic": 0.1585364918736584,
+      "ks_pvalue": 3.3306690738754696e-16,
+      "wasserstein_distance": 0.033417127314575336
     },
     "hemolysis_risk": {
-      "train_pos_mean": 0.3484511077404022,
-      "train_pos_std": 0.4075656235218048,
-      "gen_mean": 0.35959523916244507,
-      "gen_std": 0.37016627192497253,
-      "mean_abs_diff": 0.011144131422042847
+      "train_pos_mean": 0.1958167999982834,
+      "train_pos_std": 0.1374257653951645,
+      "gen_mean": 0.15195707976818085,
+      "gen_std": 0.10910925269126892,
+      "mean_abs_diff": 0.04385972023010254,
+      "ks_statistic": 0.2011473985485025,
+      "ks_pvalue": 3.3306690738754696e-16,
+      "wasserstein_distance": 0.04561889161058186
     },
     "toxicity_risk": {
-      "train_pos_mean": 0.17703759670257568,
-      "train_pos_std": 0.17538763582706451,
-      "gen_mean": 0.18213391304016113,
-      "gen_std": 0.15641632676124573,
-      "mean_abs_diff": 0.005096316337585449
+      "train_pos_mean": 0.11744808405637741,
+      "train_pos_std": 0.08644384890794754,
+      "gen_mean": 0.10681318491697311,
+      "gen_std": 0.07928336411714554,
+      "mean_abs_diff": 0.010634899139404297,
+      "ks_statistic": 0.06753500971072268,
+      "ks_pvalue": 0.0009293754608376004,
+      "wasserstein_distance": 0.010756736413176716
     }
   },
-  "total_candidates": 983
+  "optimization_vs_lead": {
+    "activity_probability": {
+      "lead_mean": 0.4739808056221985,
+      "generated_mean": 0.5539237140655319,
+      "delta_generated_minus_lead": 0.07994290844332556
+    },
+    "hemolysis_risk": {
+      "lead_mean": 0.18733963980454096,
+      "generated_mean": 0.15195708017727866,
+      "delta_generated_minus_lead": -0.03538255962726144
+    },
+    "toxicity_risk": {
+      "lead_mean": 0.13373861369482973,
+      "generated_mean": 0.10681318574603442,
+      "delta_generated_minus_lead": -0.02692542794879668
+    },
+    "synthesis_feasibility": {
+      "lead_mean": 0.8953480301621488,
+      "generated_mean": 0.9148878426129948,
+      "delta_generated_minus_lead": 0.01953981245087503
+    }
+  },
+  "total_candidates": 3600
 }

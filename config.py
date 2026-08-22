@@ -106,4 +106,4 @@ class ModelConfig:
 
 # ==================== 评估配置 ====================
 EVAL_NEAREST_NEIGHBOR_K = 3
-GENERATE_NUM_CANDIDATES = 100
+GENERATE_NUM_CANDIDATES = 20

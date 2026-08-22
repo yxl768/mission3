@@ -1,0 +1,81 @@
+======================================================================
+[STEP 3] 推理: masked重构评估 + Lead肽条件优化生成
+======================================================================
+[LOAD] 已加载模型: D:\mission3\mission3\checkpoints\best_cvae.pt
+[GEN] Lead peptides数量: 50
+[GEN] 评估重构性能于 30 条测试集正样本...
+[GEN]   mask_ratio=0.15 ...
+[GEN]   mask_ratio=0.25 ...
+[GEN]   mask_ratio=0.35 ...
+[GEN]   mask_ratio=0.5 ...
+[GEN] 重构评估已保存到 D:\mission3\mission3\results\reconstruction_eval.csv (含 4 个mask ratio)
+[GEN] 按策略汇总:
+    strategy=contiguous           mask_acc=0.478 seq_recovery=0.104 edit=2.92
+    strategy=motif_preserving     mask_acc=0.556 seq_recovery=0.158 edit=2.60
+    strategy=property_guided      mask_acc=0.625 seq_recovery=0.225 edit=2.27
+    strategy=random               mask_acc=0.566 seq_recovery=0.171 edit=2.53
+[GEN] 按mask ratio汇总:
+    ratio=0.15 mask_acc=0.641 seq_recovery=0.400
+    ratio=0.25 mask_acc=0.572 seq_recovery=0.183
+    ratio=0.35 mask_acc=0.532 seq_recovery=0.067
+    ratio=0.50 mask_acc=0.480 seq_recovery=0.008
+[GEN] 从leads生成候选肽...
+[GEN] 生成候选数量: 3600
+[GEN] 候选肽已保存到 D:\mission3\mission3\results\generated_candidates.csv
+======================================================================
+[STEP 4] 完整评估: 重构/质量/条件引导/性质分布 + 可视化
+======================================================================
+[PLOT] D:\mission3\mission3\plots\training_curves.png
+[EVAL] 重构评估汇总:
+         strategy    n  avg_mask_acc  median_mask_acc  seq_recovery_rate  avg_edit_distance  avg_n_mask
+       contiguous  240      0.478234         0.428571           0.104167           2.925000    5.295833
+ motif_preserving  240      0.555733         0.522727           0.158333           2.604167    5.458333
+  property_guided  240      0.624882         0.666667           0.225000           2.275000    5.458333
+           random  240      0.566112         0.600000           0.170833           2.533333    5.458333
+[PLOT] D:\mission3\mission3\plots\mask_strategy_comparison.png
+[EVAL] mask ratio性能汇总:
+ mask_ratio    n  avg_mask_acc  median_mask_acc  seq_recovery_rate  avg_edit_distance  avg_n_mask
+       0.15  240      0.640625         0.666667           0.400000           0.983333    2.625000
+       0.25  240      0.572153         0.666667           0.183333           1.858333    4.250000
+       0.35  240      0.532442         0.500000           0.066667           2.870833    6.066667
+       0.50  240      0.479741         0.500000           0.008333           4.625000    8.729167
+[PLOT] D:\mission3\mission3\plots\mask_ratio_performance_curve.png
+[EVAL] 生成质量指标: {'total': 3600, 'valid_rate': 1.0, 'unique_rate': 0.6875, 'novel_rate': 0.9986111111111111, 'avg_nn_similarity': 0.4550603926181793}
+[EVAL] 条件引导分析:
+  net_charge          : lead=4.160 gen=5.667 target=6.724 guidance=58.76%
+  GRAVY               : lead=0.058 gen=-0.308 target=-0.054 guidance=326.07%
+  hydrophobic_ratio   : lead=0.475 gen=0.429 target=0.430 guidance=101.18%
+  KRH_ratio           : lead=0.283 gen=0.362 target=0.368 guidance=93.55%
+  hemolysis_risk      : lead=0.187 gen=0.152 target=0.040 guidance=24.01%
+  toxicity_risk       : lead=0.134 gen=0.107 target=0.040 guidance=28.72%
+  aromatic_ratio      : lead=0.094 gen=0.073 target=0.080 guidance=152.01%
+  length              : lead=16.920 gen=16.920 target=16.920 guidance=N/A
+[PLOT] D:\mission3\mission3\plots\condition_guidance.png
+[PLOT] D:\mission3\mission3\plots\property_distribution.png
+[PLOT] D:\mission3\mission3\plots\composite_score_histogram.png
+[EVAL] 最终候选CSV已保存: D:\mission3\mission3\results\generated_candidates.csv  (共3600条)
+[EVAL] Top-10 候选:
+  Score=10.512 Act=0.816 Hemo=0.136 Seq=KVWKKIASIGKKVLKKL
+  Score=10.505 Act=0.768 Hemo=0.093 Seq=KKWKKFASIGKKVLKAL
+  Score=10.493 Act=0.817 Hemo=0.129 Seq=VRLRRIVRVIRK
+  Score=10.493 Act=0.817 Hemo=0.129 Seq=VRLRRIVRVIRK
+  Score=10.465 Act=0.788 Hemo=0.111 Seq=KKWKKIASIGKKVLKAL
+  Score=10.465 Act=0.788 Hemo=0.111 Seq=KKWKKIASIGKAVLKKL
+  Score=10.464 Act=0.804 Hemo=0.139 Seq=IGKVVRRFGSRIKKFLRKL
+  Score=10.456 Act=0.691 Hemo=0.096 Seq=KNWKKIASILKKVGKAL
+  Score=10.455 Act=0.686 Hemo=0.092 Seq=KNWKKIASILKKLGKAL
+  Score=10.441 Act=0.811 Hemo=0.125 Seq=RRLRIRVRVVVK
+[EVAL] 评估指标已保存到 D:\mission3\mission3\results\evaluation_metrics.json
+======================================================================
+[STEP 5] 生成训练报告
+======================================================================
+[REPORT] 报告已保存: D:\mission3\mission3\results\REPORT.md
+
+======================================================================
+[PIPELINE] 管线执行完成。总耗时: 234.0s
+[PIPELINE] 核心产物:
+  - 模型: D:\mission3\mission3\checkpoints\best_cvae.pt
+  - 候选肽: D:\mission3\mission3\results\generated_candidates.csv
+  - 报告: D:\mission3\mission3\results\REPORT.md
+  - 可视化: D:\mission3\mission3\plots/*.png
+======================================================================

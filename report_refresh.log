@@ -1,0 +1,13 @@
+======================================================================
+[STEP 5] 生成训练报告
+======================================================================
+[REPORT] 报告已保存: D:\mission3\mission3\results\REPORT.md
+
+======================================================================
+[PIPELINE] 管线执行完成。总耗时: 2.5s
+[PIPELINE] 核心产物:
+  - 模型: D:\mission3\mission3\checkpoints\best_cvae.pt
+  - 候选肽: D:\mission3\mission3\results\generated_candidates.csv
+  - 报告: D:\mission3\mission3\results\REPORT.md
+  - 可视化: D:\mission3\mission3\plots/*.png
+======================================================================
